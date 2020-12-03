@@ -15,7 +15,8 @@ class App extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
-        primarySwatch: primaryColor,
+        //primarySwatch: primaryColor,
+        primaryColor: Colors.black,
         visualDensity: VisualDensity.adaptivePlatformDensity,
         ),
       home: StreamBuilder(
@@ -33,22 +34,8 @@ class App extends StatelessWidget {
       );
   }
 
-  static const int _primaryValue = 0xFFF39800;
-  static const MaterialColor primaryColor = MaterialColor(
-    _primaryValue,
-    <int, Color>{
-      50: Color(0xFFF39800),
-      100: Color(0xFFF39800),
-      200: Color(0xFFF39800),
-      300: Color(0xFFF39800),
-      400: Color(0xFFF39800),
-      500: Color(_primaryValue),
-      600: Color(0xFFF39800),
-      700: Color(0xFFF39800),
-      800: Color(0xFFF39800),
-      900: Color(0xFFF39800),
-    },
-    );
+  //static const int _primaryValue = white;
+  //static const MaterialColor primaryColor = Colors.white;
 
   // UserState => page
   StatelessWidget _convertPage(UserState state) {

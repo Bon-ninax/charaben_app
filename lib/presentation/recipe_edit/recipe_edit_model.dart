@@ -2,8 +2,10 @@ import 'dart:io';
 
 import 'package:charaben_app/common/recipe.dart';
 import 'package:charaben_app/common/recipe_add.dart';
+import 'package:charaben_app/common/storage_path.dart';
 import 'package:charaben_app/common/text_process.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:enum_to_string/enum_to_string.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/material.dart';
@@ -11,26 +13,30 @@ import 'package:flutter_native_image/flutter_native_image.dart';
 import 'package:image_cropper/image_cropper.dart';
 import 'package:image_picker/image_picker.dart';
 
-class RecipeAddModel extends ChangeNotifier {
+import '../../main.dart';
+
+class RecipeEditModel extends ChangeNotifier {
   FirebaseAuth _auth = FirebaseAuth.instance;
-  RecipeAdd recipeAdd = RecipeAdd();
+  Recipe recipe;
   List<Recipe> recipes = [];
   File imageFile;
   File thumbnailImageFile;
   bool isUploading = false;
-  String errorName = '';
   String errorCaption = '';
   String errorReference = '';
-  bool isNameValid = false;
   bool isCaptionValid = false;
   bool isReferenceValid = true;
   String _generatedId;
+  String storagePath;
 
-  Future fetchRecipeAdd(context) async {
-    QuerySnapshot docs =
-    await FirebaseFirestore.instance.collection('recipes').get();
-    List<Recipe> recipes = docs.docs.map((doc) => Recipe(doc)).toList();
-    this.recipes = recipes;
+  RecipeEditModel(this.recipe) {
+    fetchStragePath();
+  }
+
+  Future fetchStragePath() async {
+    //this.userStoragePath = UsersStoragePath();
+    this.storagePath = ImagesStoragePath();
+    endLoading();
     notifyListeners();
   }
 
@@ -58,7 +64,7 @@ class RecipeAddModel extends ChangeNotifier {
         ),
       );
 
-    // レシピ画像（W: 400, H:400 @2x）
+    // レシピ画像（W: 400, H:300 @2x）
     this.imageFile = await FlutterNativeImage.compressImage(
       _croppedImageFile.path,
       targetWidth: 400,
@@ -77,22 +83,17 @@ class RecipeAddModel extends ChangeNotifier {
 
   Future addRecipeToFirebase() async {
     String uid = _auth.currentUser.uid;
-    String name;
-    // 画像が変更されている場合のみ実行する
-    if (this.imageFile != null) {
-      String dateTime = DateTime.now().toString();
-    }
 
     // tokenMap を作成するための入力となる文字列のリスト
     /// レシピ名とレシピの全文を検索対象にする場合
     List _preTokenizedList = [];
-    _preTokenizedList.add(recipeAdd.name);
-    _preTokenizedList.add(recipeAdd.caption);
+    _preTokenizedList.add(recipe.name);
+    _preTokenizedList.add(recipe.caption);
 
     List _tokenizedList = tokenize(_preTokenizedList);
-    recipeAdd.tokenMap =
+    recipe.tokenMap =
         Map.fromIterable(_tokenizedList, key: (e) => e, value: (_) => true);
-    print(recipeAdd.tokenMap);
+    print(recipe.tokenMap);
 
     try {
       DocumentSnapshot _doc = await FirebaseFirestore.instance
@@ -101,34 +102,29 @@ class RecipeAddModel extends ChangeNotifier {
           .get();
 
       if (_doc.data() == null) {
-        throw('');
+        throw('登録に失敗しました。');
       }
-
-      name=_doc.data ()['name'];
 
       await FirebaseFirestore.instance
           .collection ('charaben')
-          .add (
-        {
-          'author': {
-            'id': uid,
-            'name': name
-          },
-          'name': recipeAdd.name,
-          'caption': recipeAdd.caption,
-          'reference': recipeAdd.reference,
-          'tokenMap': recipeAdd.tokenMap,
-          'createdAt': FieldValue.serverTimestamp (),
-          'updatedAt': FieldValue.serverTimestamp (),
-        },
-        ).then((docRef) async => {_generatedId = docRef.id})
-          .then((_) async => {
-            _uploadImage()
-          });
+          .doc(recipe.documentId)
+          .update(
+            {
+              'name': recipe.name,
+              'caption': recipe.caption,
+              'reference': recipe.reference,
+              'tokenMap': recipe.tokenMap,
+              'updatedAt': FieldValue.serverTimestamp (),
+            },
+            ).then((_) async => {
+              if (this.imageFile != null) {
+                // 画像が変更されている場合のみ実行する
+                _uploadImage ()
+              }
+            });
     } catch(e) {
-      return;
+      throw('登録に失敗しました。');
     }
-
     notifyListeners();
   }
 
@@ -137,7 +133,7 @@ class RecipeAddModel extends ChangeNotifier {
     FirebaseStorage _storage = FirebaseStorage.instance;
     StorageTaskSnapshot _snapshot = await _storage
         .ref()
-        .child('images/' + _generatedId)
+        .child('images/' + recipe.documentId)
         .putFile(this.imageFile)
         .onComplete;
   }
@@ -157,27 +153,31 @@ class RecipeAddModel extends ChangeNotifier {
         .onComplete;
   }
 
-  void changeRecipeName(text) {
-    this.recipeAdd.name = text;
-    if (text.isEmpty) {
-      this.isNameValid = false;
-      this.errorName = 'レシピ名を入力して下さい。';
-    } else if (text.length > 30) {
-      this.isNameValid = false;
-      this.errorName = '30文字以内で入力して下さい。';
-    } else {
-      this.isNameValid = true;
-      this.errorName = '';
+  Future deleteRecipe() async {
+    try {
+      await FirebaseFirestore.instance
+          .collection ('charaben')
+          .doc (recipe.documentId)
+          .delete ().then ((_) async =>
+      {
+        FirebaseStorage.instance
+            .ref ()
+            .child ('images/' + recipe.documentId)
+            .delete ()
+      });
+    } catch(e) {
+      print(e.toString());
+      throw('削除に失敗しました。');
     }
-    notifyListeners();
   }
 
+
   void changeRecipeCaption(text) {
-    this.recipeAdd.caption = text;
+    this.recipe.caption = text;
     if (text.isEmpty) {
       this.isCaptionValid = false;
       this.errorCaption = 'レシピの内容を入力して下さい。';
-    } else if (text.length > 100) {
+    } else if (text.length > 200) {
       this.isCaptionValid = false;
       this.errorCaption = '200文字以内で入力して下さい。';
     } else {
@@ -188,7 +188,7 @@ class RecipeAddModel extends ChangeNotifier {
   }
 
   void changeRecipeReference(text) {
-    this.recipeAdd.reference = text;
+    this.recipe.reference = text;
     if (text.length > 100) {
       this.isReferenceValid = false;
       this.errorReference = '100文字以内で入力して下さい。';

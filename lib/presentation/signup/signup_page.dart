@@ -1,4 +1,5 @@
 import 'package:charaben_app/common/text_dialog.dart';
+import 'package:charaben_app/presentation/login/login_page.dart';
 import 'package:charaben_app/presentation/signup/signup_model.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
@@ -15,15 +16,17 @@ class SignupPage extends StatelessWidget {
         child: Scaffold(
           appBar:
           AppBar(
+            backgroundColor: Colors.white,
+            elevation: 0.0,
             iconTheme: IconThemeData(
-              color: Colors.white,
+              color: Colors.black,
               ),
             centerTitle: true,
             title: Text(
               "ユーザー登録",
               style: TextStyle(
                 fontSize: 16.0,
-                color: Colors.white,
+                color: Colors.black,
                 ),
               ),
             leading: IconButton(
@@ -101,18 +104,18 @@ class SignupPage extends StatelessWidget {
                         height: 50,
                         child: RaisedButton(
                           child: Text('ユーザー登録する'),
-                          color: Color(0xFFF39800),
+                          color: Colors.lightBlue,
                           textColor: Colors.white,
                           onPressed: () async {
                             model.startLoading();
                             try {
-                              await model.linkAnonymousUser();
+                              await model.shinUp();
                               await model.login();
                               await showEmailVerifyTextDialog(context, model.mail);
                               await Navigator.pushReplacement(
                                 context,
                                 MaterialPageRoute(
-                                  //builder: (context) => LoginPage(),
+                                  builder: (context) => LoginPage(),
                                   ),
                                 );
                             } catch (e) {

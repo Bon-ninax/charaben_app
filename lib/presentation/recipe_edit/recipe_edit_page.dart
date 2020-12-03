@@ -1,14 +1,16 @@
-import 'package:charaben_app/presentation/recipe_add/recipe_add_model.dart';
+import 'package:charaben_app/common/text_dialog.dart';
+import 'package:charaben_app/presentation/recipe_edit/recipe_edit_model.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import '';
 
-class RecipeAddPage extends StatelessWidget {
+class RecipeEditPage extends StatelessWidget {
+  RecipeEditPage(this.recipe) {}
+  final recipe;
   @override
   Widget build(BuildContext context) {
-    return ChangeNotifierProvider<RecipeAddModel>(
-      create: (_) => RecipeAddModel(),
-      child: Consumer<RecipeAddModel>(
+    return ChangeNotifierProvider<RecipeEditModel>(
+      create: (_) => RecipeEditModel(recipe),
+      child: Consumer<RecipeEditModel>(
         builder: (context, model, child) {
           return Scaffold(
             appBar: PreferredSize(
@@ -16,28 +18,28 @@ class RecipeAddPage extends StatelessWidget {
               child: AppBar(
                 iconTheme: IconThemeData(
                   color: Colors.black,
-                  ),
+                ),
                 elevation: 0.0,
                 backgroundColor: Colors.white,
                 centerTitle: true,
                 title: Text(
-                  '新規登録',
+                  '編集',
                   style: TextStyle(
                     fontSize: 16.0,
                     color: Colors.black,
-                    ),
                   ),
+                ),
                 leading: IconButton(
                   icon: Icon(
                     Icons.close,
                     size: 20.0,
-                    ),
+                  ),
                   onPressed: () {
                     Navigator.of(context).pop();
                   },
-                  ),
                 ),
               ),
+            ),
             body: Stack(
               children: [
                 SingleChildScrollView(
@@ -49,7 +51,7 @@ class RecipeAddPage extends StatelessWidget {
                       children: [
                         SizedBox(
                           height: 8,
-                          ),
+                        ),
                         Container(
                           alignment: Alignment.topLeft,
                           height: 150,
@@ -59,44 +61,26 @@ class RecipeAddPage extends StatelessWidget {
                             },
                             child: model.imageFile == null
                                 ? SizedBox(
-                              width: double.infinity,
-                              child: Stack(
-                                children: [
-                                  Container(
-                                    color: Color(0xFFDADADA),
-                                    ),
-                                  Center(
-                                    child: Column(
-                                      mainAxisAlignment:
-                                      MainAxisAlignment.center,
+                                    width: double.infinity,
+                                    child: Stack(
                                       children: [
-                                        Icon(Icons.add_photo_alternate),
-                                        SizedBox(
-                                          height: 8,
-                                          ),
-                                        Text(
-                                          'タップして画像を追加',
-                                          style: TextStyle(
-                                            fontSize: 12.0,
-                                            ),
-                                          ),
+                                        Image.network(
+                                            '${model.storagePath}${model.recipe.documentId}?alt=media',
+                                            fit: BoxFit.fitWidth),
                                       ],
-                                      ),
                                     ),
-                                ],
-                                ),
-                              )
+                                  )
                                 : Image.file(
-                              model.imageFile,
-                              ),
-                            ),
+                                    model.imageFile,
+                                  ),
                           ),
+                        ),
                         SizedBox(
                           height: 16,
-                          ),
+                        ),
                         TextFormField(
                           textInputAction: TextInputAction.done,
-                          initialValue: model.recipeAdd.caption,
+                          initialValue: model.recipe.caption,
                           onChanged: (text) {
                             model.changeRecipeCaption(text);
                           },
@@ -108,18 +92,18 @@ class RecipeAddPage extends StatelessWidget {
                             errorText: model.errorCaption == ''
                                 ? null
                                 : model.errorCaption,
-                            ),
+                          ),
                           style: TextStyle(
                             fontSize: 14.0,
                             height: 1.4,
-                            ),
                           ),
+                        ),
                         SizedBox(
                           height: 16,
-                          ),
+                        ),
                         TextFormField(
                           textInputAction: TextInputAction.done,
-                          initialValue: model.recipeAdd.reference,
+                          initialValue: model.recipe.reference,
                           onChanged: (text) {
                             model.changeRecipeReference(text);
                           },
@@ -128,86 +112,105 @@ class RecipeAddPage extends StatelessWidget {
                           decoration: InputDecoration(
                             labelText: '参考にしたキャラ弁のURLや書籍名を記入',
                             alignLabelWithHint: true,
-                            ),
+                          ),
                           style: TextStyle(
                             fontSize: 14.0,
                             height: 1.0,
-                            ),
                           ),
+                        ),
                         SizedBox(
                           height: 16,
-                          ),
+                        ),
                         SizedBox(
                           height: 16,
-                          ),
+                        ),
                         Center(
                           child: SizedBox(
                             width: double.infinity,
                             height: 40,
                             child: RaisedButton(
-                              child: Text(
-                                '登録',
+                                child: Text(
+                                  '登録',
                                 ),
-                              color: Color(0xFFF39800),
-                              textColor: Colors.white,
-                              onPressed: model.imageFile != null &&
-                                  model.isCaptionValid &&
-                                  model.isReferenceValid
-                                  ? () async {
-                                await addRecipe(model, context);
-                              }
-                                  : null
-                              ),
-                            ),
+                                color: Colors.lightBlue,
+                                textColor: Colors.white,
+                                onPressed: model.imageFile != null ||
+                                        model.isCaptionValid &&
+                                            model.isReferenceValid
+                                    ? () async {
+                                        await addRecipe(model, context);
+                                      }
+                                    : null),
                           ),
+                        ),
+                        Center(
+                          child: SizedBox(
+                            width: double.infinity,
+                            height: 40,
+                            child: OutlinedButton(
+                                child: Text('削除',
+                                    style: TextStyle(color: Colors.grey)),
+                                style: OutlinedButton.styleFrom(
+                                  primary: Colors.black,
+                                  side: const BorderSide(color: Colors.grey),
+                                ),
+                                onPressed: () async {
+                                  try {
+                                    await model.deleteRecipe ();
+                                  } catch(e) {
+                                    showTextDialog(context, e);
+                                  }
+                                }),
+                          ),
+                        ),
                       ],
-                      ),
                     ),
                   ),
+                ),
                 model.isUploading
                     ? Container(
-                  height: double.infinity,
-                  width: double.infinity,
-                  color: Colors.grey.withOpacity(0.7),
-                  child: Center(
-                    child: Stack(
-                      children: [
-                        Center(
-                          child: Container(
-                            width: 200,
-                            height: 150,
-                            color: Colors.white.withOpacity(0.8),
-                            ),
-                          ),
-                        Center(
-                          child: Column(
-                            mainAxisAlignment: MainAxisAlignment.center,
+                        height: double.infinity,
+                        width: double.infinity,
+                        color: Colors.grey.withOpacity(0.7),
+                        child: Center(
+                          child: Stack(
                             children: [
-                              CircularProgressIndicator(),
-                              SizedBox(
-                                height: 16,
+                              Center(
+                                child: Container(
+                                  width: 200,
+                                  height: 150,
+                                  color: Colors.white.withOpacity(0.8),
                                 ),
-                              Container(
-                                child: Text('レシピを保存しています...'),
+                              ),
+                              Center(
+                                child: Column(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  children: [
+                                    CircularProgressIndicator(),
+                                    SizedBox(
+                                      height: 16,
+                                    ),
+                                    Container(
+                                      child: Text('レシピを保存しています...'),
+                                    ),
+                                  ],
                                 ),
+                              ),
                             ],
-                            ),
                           ),
-                      ],
-                      ),
-                    ),
-                  )
+                        ),
+                      )
                     : SizedBox(),
               ],
-              ),
-            );
+            ),
+          );
         },
-        ),
-      );
+      ),
+    );
   }
 }
 
-Future addRecipe(RecipeAddModel model, BuildContext context) async {
+Future addRecipe(RecipeEditModel model, BuildContext context) async {
   model.startLoading();
   try {
     await model.addRecipeToFirebase();
@@ -217,26 +220,18 @@ Future addRecipe(RecipeAddModel model, BuildContext context) async {
       barrierDismissible: false,
       builder: (BuildContext context) {
         return AlertDialog(
-          content: Text('レシピを追加しました。'),
+          content: Text('レシピを編集しました。\n画像の反映に時間がかかる場合があります。'),
           actions: <Widget>[
             FlatButton(
               child: Text('OK'),
               onPressed: () async {
                 Navigator.of(context).pop();
-                await Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    //builder: (context) => TopPage(),
-                    fullscreenDialog: true,
-                    ),
-                  );
-                model.fetchRecipeAdd(context);
               },
-              ),
+            ),
           ],
-          );
+        );
       },
-      );
+    );
     Navigator.of(context).pop();
   } catch (e) {
     model.endLoading();
@@ -252,10 +247,10 @@ Future addRecipe(RecipeAddModel model, BuildContext context) async {
               onPressed: () {
                 Navigator.of(context).pop();
               },
-              ),
+            ),
           ],
-          );
+        );
       },
-      );
+    );
   }
 }

@@ -1,5 +1,9 @@
 import 'package:charaben_app/common/text_dialog.dart';
+import 'package:charaben_app/common/user_state.dart';
+import 'package:charaben_app/presentation/account_setting/account_setting_page.dart';
 import 'package:charaben_app/presentation/login/login_model.dart';
+import 'package:charaben_app/presentation/signup/signup_page.dart';
+import 'package:charaben_app/common/convert_error_message.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -14,11 +18,10 @@ class LoginPage extends StatelessWidget {
     return ChangeNotifierProvider<LoginModel>(
         create: (_) => LoginModel(),
         child: Scaffold(
-          appBar:
-          AppBar(
+          appBar: AppBar(
             iconTheme: IconThemeData(
               color: Colors.white,
-              ),
+            ),
             centerTitle: true,
             backgroundColor: Colors.white,
             elevation: 0,
@@ -27,19 +30,19 @@ class LoginPage extends StatelessWidget {
               style: TextStyle(
                 fontSize: 16.0,
                 color: Colors.white,
-                ),
               ),
+            ),
             leading: IconButton(
               icon: Icon(
                 Icons.close,
                 size: 30.0,
                 color: Colors.black,
-                ),
+              ),
               onPressed: () {
                 Navigator.of(context).pop();
               },
-              ),
             ),
+          ),
           body: Consumer<LoginModel>(
             builder: (context, model, child) {
               return Stack(children: [
@@ -58,14 +61,14 @@ class LoginPage extends StatelessWidget {
                           maxLines: 1,
                           decoration: InputDecoration(
                             errorText:
-                            model.errorMail == '' ? null : model.errorMail,
+                                model.errorMail == '' ? null : model.errorMail,
                             labelText: 'メールアドレス',
                             border: OutlineInputBorder(),
-                            ),
                           ),
+                        ),
                         SizedBox(
                           height: 16,
-                          ),
+                        ),
                         TextFormField(
                           controller: passwordController,
                           onChanged: (text) {
@@ -79,11 +82,11 @@ class LoginPage extends StatelessWidget {
                                 : model.errorPassword,
                             labelText: 'パスワード',
                             border: OutlineInputBorder(),
-                            ),
                           ),
+                        ),
                         SizedBox(
                           height: 4,
-                          ),
+                        ),
                         Row(
                           mainAxisAlignment: MainAxisAlignment.end,
                           children: [
@@ -95,9 +98,12 @@ class LoginPage extends StatelessWidget {
                                     barrierDismissible: false,
                                     builder: (BuildContext context) {
                                       return AlertDialog(
-                                        title: Text('ログインできない場合',
-                                                      textAlign: TextAlign.center,
-                                                      style: TextStyle(fontWeight: FontWeight.bold),),
+                                        title: Text(
+                                          'ログインできない場合',
+                                          textAlign: TextAlign.center,
+                                          style: TextStyle(
+                                              fontWeight: FontWeight.bold),
+                                        ),
                                         content: Container(
                                           height: 150,
                                           child: Column(
@@ -105,16 +111,14 @@ class LoginPage extends StatelessWidget {
                                               Icon(Icons.mail, size: 30),
                                               SizedBox(
                                                 height: 10,
-                                                ),
+                                              ),
                                               Text(
                                                 'パスワードリセットメールをお送りします\nメールアドレスを入力してください。',
-                                                style: TextStyle(
-                                                    fontSize: 12
-                                                    ),
-                                                ),
+                                                style: TextStyle(fontSize: 12),
+                                              ),
                                               SizedBox(
                                                 height: 10,
-                                                ),
+                                              ),
                                               TextFormField(
                                                 controller: sendMailController,
                                                 onChanged: (text) {
@@ -123,58 +127,61 @@ class LoginPage extends StatelessWidget {
                                                 obscureText: true,
                                                 maxLines: 1,
                                                 decoration: InputDecoration(
-                                                  errorText: model.errorSendMail == ''
-                                                      ? null
-                                                      : model.errorSendMail,
+                                                  errorText:
+                                                      model.errorSendMail == ''
+                                                          ? null
+                                                          : model.errorSendMail,
                                                   labelText: 'メールアドレス',
                                                   border: OutlineInputBorder(),
-                                                  ),
                                                 ),
+                                              ),
                                             ],
-                                            ),
                                           ),
+                                        ),
                                         actions: <Widget>[
                                           Row(
-                                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                            mainAxisAlignment:
+                                                MainAxisAlignment.spaceBetween,
                                             children: [
                                               FlatButton(
                                                 child: Text('キャンセル'),
                                                 onPressed: () {
                                                   Navigator.pop(context);
                                                 },
-                                                ),
+                                              ),
                                               FlatButton(
                                                 child: Text('送信',
-                                                                style: TextStyle(color: Colors.red)),
+                                                    style: TextStyle(
+                                                        color: Colors.red)),
                                                 onPressed: () {
                                                   Navigator.pop(context);
-                                                  model.sendPasswordResetEmail();
+                                                  model
+                                                      .sendPasswordResetEmail();
                                                 },
-                                                ),
+                                              ),
                                             ],
-                                            ),
+                                          ),
                                         ],
-                                        );
+                                      );
                                     },
-                                    );
+                                  );
                                   if (model.existsError != null) {
                                     showTextDialog(context, model.existsError);
                                   }
                                 },
-
                                 child: Text(
                                   'パスワードを忘れた場合',
-                                  style: TextStyle(color: Colors.lightBlue,
-                                                     fontWeight: FontWeight.bold,
-                                                   ),
+                                  style: TextStyle(
+                                    color: Colors.lightBlue,
+                                    fontWeight: FontWeight.bold,
+                                  ),
                                   textAlign: TextAlign.right,
-                                  )
-                                ),
+                                )),
                           ],
-                          ),
+                        ),
                         SizedBox(
                           height: 4,
-                          ),
+                        ),
                         SizedBox(
                           width: double.infinity,
                           height: 50,
@@ -187,38 +194,63 @@ class LoginPage extends StatelessWidget {
                               model.startLoading();
                               try {
                                 await model.login();
-                                await Navigator.pushReplacement(
-                                  context,
-                                  MaterialPageRoute(
-                                    //builder: (context) => LoginPage(),
+                                model.endLoading();
+                                await Navigator.pop(context, true);
+                                if (model.userState == UserState.signedIn) {
+                                  await Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                      builder: (context) =>
+                                          AccountSettingPage(),
                                     ),
                                   );
+                                }
                               } catch (e) {
-                                showEmailNotVerifyTextDialog(context);
+                                if (e == 'isNotVerified') {
+                                  showEmailNotVerifyTextDialog(context);
+                                } else {
+                                  showTextDialog(context, convertErrorMessage(e.code));
+                                }
                                 model.endLoading();
                               }
                             },
-                            ),
                           ),
+                        ),
                         SizedBox(
                           height: 16,
+                        ),
+                        FlatButton(
+                          child: Text(
+                            '新規登録はこちらから',
+                            style: TextStyle(
+                                color: Colors.lightBlue,
+                                fontWeight: FontWeight.bold),
                           ),
+                          onPressed: () async {
+                            await Navigator.pushReplacement(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => SignupPage(),
+                              ),
+                            );
+                          },
+                        )
                       ],
-                      ),
                     ),
                   ),
+                ),
                 model.isLoading
                     ? Container(
-                  color: Colors.black.withOpacity(0.3),
-                  child: Center(
-                    child: CircularProgressIndicator(),
-                    ),
-                  )
+                        color: Colors.black.withOpacity(0.3),
+                        child: Center(
+                          child: CircularProgressIndicator(),
+                        ),
+                      )
                     : SizedBox()
               ]);
             },
-            ),
-          ));
+          ),
+        ));
   }
 
   showPasswordResetTextDialog(context) async {
@@ -227,9 +259,11 @@ class LoginPage extends StatelessWidget {
       barrierDismissible: false,
       builder: (BuildContext context) {
         return AlertDialog(
-          title: Text('ログインできない場合',
-                        textAlign: TextAlign.center,
-                        style: TextStyle(fontWeight: FontWeight.bold),),
+          title: Text(
+            'ログインできない場合',
+            textAlign: TextAlign.center,
+            style: TextStyle(fontWeight: FontWeight.bold),
+          ),
           content: Container(
             height: 100,
             child: Column(
@@ -237,16 +271,14 @@ class LoginPage extends StatelessWidget {
                 Icon(Icons.mail, size: 30),
                 SizedBox(
                   height: 10,
-                  ),
+                ),
                 Container(
                     height: 50,
                     child: Text(
-                        'パスワードリセットメールをお送りします\nメールに記載されているアドレスをクリックして登録を完了してください。'
-                        )
-                    )
+                        'パスワードリセットメールをお送りします\nメールに記載されているアドレスをクリックして登録を完了してください。'))
               ],
-              ),
             ),
+          ),
           actions: <Widget>[
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -256,20 +288,18 @@ class LoginPage extends StatelessWidget {
                   onPressed: () {
                     Navigator.pop(context, false);
                   },
-                  ),
+                ),
                 FlatButton(
-                  child: Text('OK',
-                                  style: TextStyle(color: Colors.red)
-                              ),
+                  child: Text('OK', style: TextStyle(color: Colors.red)),
                   onPressed: () {
                     Navigator.pop(context, true);
                   },
-                  ),
+                ),
               ],
-              ),
+            ),
           ],
-          );
+        );
       },
-      );
+    );
   }
 }

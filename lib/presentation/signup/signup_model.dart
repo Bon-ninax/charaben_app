@@ -1,5 +1,4 @@
 import 'package:charaben_app/common/convert_error_message.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
@@ -16,61 +15,12 @@ class SignupModel extends ChangeNotifier {
   bool isConfirmValid = false;
   User user;
 
-  Future linkAnonymousUser() async {
-
-    // async function
+  Future shinUp() async {
     try {
-      // 登録の確認
-      //List providers = await FirebaseAuth.instance.fetchSignInMethodsForEmail(mail);//fetchSignInMethodsForEmail(mail);
-
-//      if (providers.map(p => p === firebase.auth.EmailAuthProvider.EMAIL_PASSWORD_SIGN_IN_METHOD) !== -1) {
-//        return 'すでに登録されているようです';
-//      }
-
       // アカウント作成
       UserCredential result = await FirebaseAuth.instance.createUserWithEmailAndPassword(email: mail, password: password);
       user = result.user;
-//      FirebaseAuth.instance.currentUser.sendEmailVerification();
-      //return _userFromFirebaseUser(user);
-
-
-//      // 確認メールの送信
-//      await f
-//      irebase.auth().currentUser.sendEmailVerification({
-//                                                              　　url: 'https://example.com/mypage/',
-//                                                              　　handleCodeInApp: false,
-//                                                              });
-//
-//      // TODO: メール送信完了表示などする
-//
-    } catch (e) {
-      print('エラーコード：${e.code}\nエラー：$e');
-      throw (convertErrorMessage(e.code));
-    }
-
-//    AuthCredential credential = EmailAuthProvider.credential(
-//      email: this.mail,
-//      password: this.password,
-//      );
-
-//    User anonymousUser = FirebaseAuth.instance.currentUser;
-//
-//    try {
-//      await anonymousUser.linkWithCredential(credential);
-//    } catch (e) {
-//      print('エラーコード：${e.code}\nエラー：$e');
-//      throw (convertErrorMessage(e.code));
-//    }
-
-    try {
-      await FirebaseFirestore.instance
-          .collection('users')
-          .doc(user.uid)
-          .set(
-        {
-          'email': this.mail,
-        },
-        );
+      FirebaseAuth.instance.currentUser.sendEmailVerification();
     } catch (e) {
       print('エラーコード：${e.code}\nエラー：$e');
       throw (convertErrorMessage(e.code));

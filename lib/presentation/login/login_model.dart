@@ -1,4 +1,4 @@
-import 'package:charaben_app/common/convert_error_message.dart';
+import 'package:charaben_app/common/user_state.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
@@ -19,22 +19,42 @@ class LoginModel extends ChangeNotifier {
   bool isVerified;
   String existsError;
   User user;
+  UserState userState;
+
 
   /// ログイン
   Future login() async {
     try {
-      isVerified = FirebaseAuth.instance.currentUser.emailVerified;
-
-      if (!isVerified) {
-        throw ('メールアドレスが認証されていません。\nご登録のメールアドレスに届いた認証メールをご確認ください。');
-      }
-
+      //await FirebaseAuth.instance.currentUser.reload();
       await FirebaseAuth.instance.signInWithEmailAndPassword(
         email: this.mail,
         password: this.password,
         );
+
+      isVerified = FirebaseAuth.instance.currentUser.emailVerified;
+
+      if (!isVerified) {
+        FirebaseAuth.instance.currentUser.sendEmailVerification();
+        await FirebaseAuth.instance.signOut();
+        throw ('isNotVerified');
+      }
+
+      final userId = FirebaseAuth.instance.currentUser.uid;
+      /// ユーザー登録確認
+      DocumentSnapshot _mySnap = await FirebaseFirestore.instance
+          .collection('users')
+          .doc(userId)
+          .get();
+
+      if (_mySnap.exists) {
+        userState = UserState.registered;
+      } else {
+        userState = UserState.signedIn;
+      }
+      notifyListeners();
     } catch (e) {
-      throw (e.toString());
+      print(e.toString());
+      throw(e);
     }
   }
 

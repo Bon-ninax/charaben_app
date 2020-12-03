@@ -13,11 +13,11 @@ showTextDialog(context, message) async {
             onPressed: () {
               Navigator.of(context).pop();
             },
-            ),
+          ),
         ],
-        );
+      );
     },
-    );
+  );
 }
 
 showEmailVerifyTextDialog(context, email) async {
@@ -36,11 +36,7 @@ showEmailVerifyTextDialog(context, email) async {
                 height: 10,
               ),
               Container(
-                height: 50,
-                  child: Text(
-                      'メールに記載されているアドレスをクリックして登録を完了してください。'
-                      )
-                )
+                  height: 50, child: Text('メールに記載されているアドレスをクリックして登録を完了してください。'))
             ],
           ),
         ),
@@ -50,11 +46,11 @@ showEmailVerifyTextDialog(context, email) async {
             onPressed: () {
               Navigator.of(context).pop();
             },
-            ),
+          ),
         ],
-        );
+      );
     },
-    );
+  );
 }
 
 showEmailNotVerifyTextDialog(context) async {
@@ -71,25 +67,49 @@ showEmailNotVerifyTextDialog(context) async {
               Icon(Icons.mail, size: 30),
               SizedBox(
                 height: 10,
-                ),
+              ),
               Container(
                   height: 50,
                   child: Text(
-                      'ご登録のメールアドレスに届いた認証メールをご確認ください。\nメールに記載されているアドレスをクリックして登録を完了してください。'
-                      )
-                  )
+                      'ご登録のメールアドレスに届いた認証メールをご確認ください。\nメールに記載されているアドレスをクリックして登録を完了してください。'))
             ],
-            ),
           ),
+        ),
         actions: <Widget>[
           FlatButton(
             child: Text('OK'),
             onPressed: () {
               Navigator.of(context).pop();
             },
-            ),
+          ),
         ],
-        );
+      );
     },
-    );
+  );
+}
+
+showChangeImageTextDialog(context) async {
+  await showDialog(
+    context: context,
+    barrierDismissible: false,
+    builder: (BuildContext context) {
+      return AlertDialog(
+        content: Text('画像を変更してよろしいですか？'),
+        actions: <Widget>[
+          FlatButton(
+            child: Text('キャンセル'),
+            onPressed: () {
+              Navigator.of(context).pop(false);
+            },
+          ),
+          FlatButton(
+            child: Text('OK'),
+            onPressed: () {
+              Navigator.of(context).pop(true);
+            },
+          ),
+        ],
+      );
+    },
+  );
 }

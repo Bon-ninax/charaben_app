@@ -1,1 +1,1 @@
-enum UserState { signedIn, signedOut, waiting }
+enum UserState { signedIn, signedOut, waiting, registered }

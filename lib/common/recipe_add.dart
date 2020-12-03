@@ -2,30 +2,22 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 
 class RecipeAdd {
   RecipeAdd({
-    this.userId = '',
-    this.createdAt,
-    this.updatedAt,
-    this.name = '',
-    this.thumbnailURL = '',
-    this.imageURL = '',
-    this.content = '',
+    this.author,
+    this.name,
+    this.caption = '',
     this.ingredients,
     this.reference = '',
     this.tokenMap,
-    this.isPublic = false,
+    this.createdAt,
+    this.updatedAt,
   });
 
-  String userId = '';
-  Timestamp createdAt;
-  Timestamp updatedAt;
+  Map<String, String> author;
   String name = '';
-  String thumbnailURL = '';
-  String imageURL = '';
-  String thumbnailName = '';
-  String imageName = '';
-  String content = '';
-  List<String> ingredients;
+  String caption = '';
+  String ingredients = '';
   String reference = '';
   Map<String, bool> tokenMap;
-  bool isPublic = false;
+  Timestamp createdAt;
+  Timestamp updatedAt;
 }

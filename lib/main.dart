@@ -21,6 +21,25 @@ void main() async {
   debugPaintSizeEnabled = false;
   // main()の中で非同期処理を行う際には、下記を実行
   WidgetsFlutterBinding.ensureInitialized();
+//  ErrorWidget.builder = (FlutterErrorDetails details) {
+//    bool inDebug = false;
+//    assert(() {
+//      inDebug = true;
+//      return true;
+//    }());
+//    // In debug mode, use the normal error widget which shows
+//    // the error message:
+//    if (inDebug) return ErrorWidget(details.exception);
+//    // In release builds, show a yellow-on-blue message instead:
+//    return Container(
+//      alignment: Alignment.center,
+//      child: Text(
+//        'Error!',
+//        style: TextStyle(color: Colors.yellow),
+//        textDirection: TextDirection.ltr,
+//        ),
+//      );
+//  };
 
   final flavor = EnumToString.fromString(
     Flavor.values,
