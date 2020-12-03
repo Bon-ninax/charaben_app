@@ -39,7 +39,7 @@ class AppModel {
 
       // singedOut の場合すぐに SplashPage が閉じてしまうので少し待つ
       if (_state == UserState.signedOut) {
-        await Future.delayed(Duration(seconds: 2));
+        await Future.delayed(Duration(milliseconds: 2600));
       }
       _userStateStreamController.sink.add(_state);
     });

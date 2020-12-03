@@ -12,13 +12,12 @@ class SearchPage extends StatelessWidget {
     return ChangeNotifierProvider<TopModel> (
         create: (_) =>
             TopModel (),
-        //..init (),
         child: Consumer<TopModel> (
             builder: (context, model, child) {
               return GridView.builder(
                 padding: EdgeInsets.zero,
                 gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
-                  maxCrossAxisExtent: 400.0,//横割合
+                  maxCrossAxisExtent: 200.0,//横割合
                   mainAxisSpacing: 1.0,// 縦間
                   crossAxisSpacing: 1.0,//横間
                   childAspectRatio: 1.0,//縦割合
@@ -35,7 +34,7 @@ class SearchPage extends StatelessWidget {
                               ),
                             );
                         },
-                        child: Image.network('${model.user}${charabenList[index].documentId}?alt=media'),
+                        child: Image.network('${model.imageStoragePath}${charabenList[index].documentId}?alt=media'),
                       )
                       );
                   },

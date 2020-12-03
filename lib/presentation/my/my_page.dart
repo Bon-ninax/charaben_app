@@ -23,19 +23,20 @@ class MyPage extends StatelessWidget {
             model.checkIfNeedUpdate (updateTime);
           }
           return Container(
-            child: Expanded(
+            //child: Expanded(
               child: RefreshIndicator(
                 onRefresh: () async {
                   print('Loading New Data');
                   model.checkIfNeedUpdate(DateTime.now());
                 },
                 child: GridView.builder(
+                    physics: AlwaysScrollableScrollPhysics(),
                     padding: EdgeInsets.zero,
                     gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
-                      maxCrossAxisExtent: 400.0, //横割合
+                      maxCrossAxisExtent: 200.0, //横割合
                       mainAxisSpacing: 2.0, // 縦間
                       crossAxisSpacing: 2.0, //横間
-                      childAspectRatio: 1.0, //縦割合
+                      childAspectRatio: 1.0,
                     ),
                     itemBuilder: (BuildContext context, int index) {
                       return model.charabenList.length != null
@@ -57,7 +58,7 @@ class MyPage extends StatelessWidget {
                                     await ImageCache().clearLiveImages();
                                   },
                                   child: Image.network(
-                                    '${model.storagePath}${model.charabenList[index].documentId}?alt=media',
+                                    '${model.imageStoragePath}${model.charabenList[index].documentId}?alt=media',
                                     fit: BoxFit.fitHeight,
                                   ),
                                 ),
@@ -70,7 +71,7 @@ class MyPage extends StatelessWidget {
                         ? 0
                         : model.charabenList.length),
               ),
-            ),
+            //),
           );
         },
       ),

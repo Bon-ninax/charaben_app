@@ -148,7 +148,7 @@ class RecipeAddPage extends StatelessWidget {
                               child: Text(
                                 '登録',
                                 ),
-                              color: Color(0xFFF39800),
+                              color: Colors.lightBlue,
                               textColor: Colors.white,
                               onPressed: model.imageFile != null &&
                                   model.isCaptionValid &&
@@ -223,21 +223,21 @@ Future addRecipe(RecipeAddModel model, BuildContext context) async {
               child: Text('OK'),
               onPressed: () async {
                 Navigator.of(context).pop();
-                await Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    //builder: (context) => TopPage(),
-                    fullscreenDialog: true,
-                    ),
-                  );
+//                await Navigator.push(
+//                  context,
+//                  MaterialPageRoute(
+//                    //builder: (context) => TopPage(),
+//                    fullscreenDialog: true,
+//                    ),
+//                  );
                 model.fetchRecipeAdd(context);
+                Navigator.of(context).pop();
               },
               ),
           ],
           );
       },
       );
-    Navigator.of(context).pop();
   } catch (e) {
     model.endLoading();
     showDialog(

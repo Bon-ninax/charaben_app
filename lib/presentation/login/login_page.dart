@@ -155,8 +155,7 @@ class LoginPage extends StatelessWidget {
                                                         color: Colors.red)),
                                                 onPressed: () {
                                                   Navigator.pop(context);
-                                                  model
-                                                      .sendPasswordResetEmail();
+                                                  model.sendPasswordResetEmail();
                                                 },
                                               ),
                                             ],
@@ -196,15 +195,6 @@ class LoginPage extends StatelessWidget {
                                 await model.login();
                                 model.endLoading();
                                 await Navigator.pop(context, true);
-                                if (model.userState == UserState.signedIn) {
-                                  await Navigator.push(
-                                    context,
-                                    MaterialPageRoute(
-                                      builder: (context) =>
-                                          AccountSettingPage(),
-                                    ),
-                                  );
-                                }
                               } catch (e) {
                                 if (e == 'isNotVerified') {
                                   showEmailNotVerifyTextDialog(context);

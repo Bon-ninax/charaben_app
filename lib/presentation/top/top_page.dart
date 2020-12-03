@@ -141,8 +141,7 @@ class TopPage extends StatelessWidget {
                                     crossAxisAlignment: CrossAxisAlignment.start,
                                     children: [
                                       SizedBox(height: 60),
-                                      Text('投稿やいいねは会員登録後にログインされた方のみご利用になることができます。'
-                                               '\n下のログインボタンからログインしてください。',
+                                      Text(model.detailMessage,
                                              style: TextStyle(
                                                  fontSize: 14,
                                                  fontWeight: FontWeight.bold
@@ -188,6 +187,7 @@ class TopPage extends StatelessWidget {
                                               ),
                                             );
                                           await model.fetchUser();
+                                          //model.currentIndex = 1;
                                           await ImageCache().clear();
                                         }
                                       },

@@ -11,6 +11,7 @@ class TopModel extends ChangeNotifier {
   UserState userState;
   UserData user;
   String message;
+  String detailMessage;
   bool canLoadMoreList = true;
   bool canLoadMoreMyList = true;
   QueryDocumentSnapshot lastVisible;
@@ -44,6 +45,7 @@ class TopModel extends ChangeNotifier {
       if (auth == null) {
         userState = UserState.signedOut;
         message = 'ログインする';
+        detailMessage = 'ログイン後に、いいねや投稿できるようになります。';
       } else {
         // ユーザー登録確認
         DocumentSnapshot _mySnap = await FirebaseFirestore.instance
@@ -55,9 +57,11 @@ class TopModel extends ChangeNotifier {
           userState = UserState.registered;
           user = UserData.doc(_mySnap);
           message = 'ユーザー情報を修正する';
+          detailMessage = '';
         } else {
           userState = UserState.signedIn;
           message = 'ユーザー情報を登録する';
+          detailMessage = '下のボタンよりユーザ-ネームを登録して会員登録完了してください。';
         }
       }
       notifyListeners();
@@ -88,7 +92,7 @@ class TopModel extends ChangeNotifier {
   Future changeScreen(index) async {
     this.currentIndex = index;
     switch (currentIndex) {
-      case 0 : hederHeight = 60.0;
+      case 0 : hederHeight = 63.0;
       break;
       case 1 : hederHeight = 90.0;
       break;

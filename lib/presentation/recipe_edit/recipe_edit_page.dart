@@ -1,4 +1,5 @@
 import 'package:charaben_app/common/text_dialog.dart';
+import 'package:charaben_app/presentation/home/home_page.dart';
 import 'package:charaben_app/presentation/recipe_edit/recipe_edit_model.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
@@ -143,6 +144,7 @@ class RecipeEditPage extends StatelessWidget {
                                     : null),
                           ),
                         ),
+                        SizedBox(height: 10),
                         Center(
                           child: SizedBox(
                             width: double.infinity,
@@ -156,7 +158,26 @@ class RecipeEditPage extends StatelessWidget {
                                 ),
                                 onPressed: () async {
                                   try {
-                                    await model.deleteRecipe ();
+                                    await model.deleteRecipe();
+                                    await showDialog(
+                                      context: context,
+                                      barrierDismissible: false,
+                                      builder: (BuildContext context) {
+                                        return AlertDialog(
+                                          content: Text('レシピを削除しました。\n画像の反映に時間がかかる場合があります。'),
+                                          actions: <Widget>[
+                                            FlatButton(
+                                              child: Text('OK'),
+                                              onPressed: () async {
+                                                int count = 0;
+                                                Navigator.popUntil(context, (_) => count++ >= 3);
+                                              },
+                                              ),
+                                          ],
+                                          );
+                                      },
+                                      );
+
                                   } catch(e) {
                                     showTextDialog(context, e);
                                   }
@@ -225,14 +246,14 @@ Future addRecipe(RecipeEditModel model, BuildContext context) async {
             FlatButton(
               child: Text('OK'),
               onPressed: () async {
-                Navigator.of(context).pop();
+                await Navigator.of(context).pop();
+                await Navigator.of(context).pop();
               },
             ),
           ],
         );
       },
     );
-    Navigator.of(context).pop();
   } catch (e) {
     model.endLoading();
     showDialog(
