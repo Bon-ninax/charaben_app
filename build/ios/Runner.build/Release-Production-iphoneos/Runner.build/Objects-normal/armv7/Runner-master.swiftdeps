@@ -1,0 +1,5 @@
+version: "Apple Swift version 5.1.3 (swiftlang-1100.0.282.1 clang-1100.0.33.15)"
+options: "7bcbe981d7d59f58e308cbee23e81a7a"
+build_time: [1606529556, 776780000]
+inputs:
+  "/Users/master/charaben_app/ios/Runner/AppDelegate.swift": [9223372036, 854775807]
