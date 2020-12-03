@@ -6,3 +6,5 @@ add filter=lfs diff=lfs merge=lfs -text
 build/ios/Debug-Development-iphonesimulator/FirebaseFirestore/FirebaseFirestore.framework/FirebaseFirestore filter=lfs diff=lfs merge=lfs -text
 build/ios/iphoneos/Runner.app/Frameworks/Flutter.framework/Flutter filter=lfs diff=lfs merge=lfs -text
 build/ios/Debug-Development-iphoneos/FirebaseFirestore/FirebaseFirestore.framework/FirebaseFirestore filter=lfs diff=lfs merge=lfs -text
+build/ios/Release-Production-iphoneos/FirebaseFirestore/FirebaseFirestore.framework/FirebaseFirestore filter=lfs diff=lfs merge=lfs -text
+build/ios/Release-Production-iphoneos/Runner.app/Frameworks/Flutter.framework/Flutter filter=lfs diff=lfs merge=lfs -text
