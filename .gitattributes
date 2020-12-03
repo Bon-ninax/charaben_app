@@ -3,3 +3,4 @@
 git filter=lfs diff=lfs merge=lfs -text
 add filter=lfs diff=lfs merge=lfs -text
 .dart_tool/flutter_build/c7d649ff71fcb06b3c1095bc564ad4c2/app.dill filter=lfs diff=lfs merge=lfs -text
+build/ios/Debug-Development-iphonesimulator/FirebaseFirestore/FirebaseFirestore.framework/FirebaseFirestore filter=lfs diff=lfs merge=lfs -text
