@@ -2,270 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4ff966bc-0698-4a70-97ca-1c500aa05ac5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/icon/icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/splash.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/14ba557bfecc18bbf60239e2ea41cec5/.filecache" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/14ba557bfecc18bbf60239e2ea41cec5/.filecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/14ba557bfecc18bbf60239e2ea41cec5/App.framework/App" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/14ba557bfecc18bbf60239e2ea41cec5/App.framework/App" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/14ba557bfecc18bbf60239e2ea41cec5/app.dill" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/14ba557bfecc18bbf60239e2ea41cec5/app.dill" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/14ba557bfecc18bbf60239e2ea41cec5/arm64/App.framework/App" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/14ba557bfecc18bbf60239e2ea41cec5/arm64/App.framework/App" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/14ba557bfecc18bbf60239e2ea41cec5/arm64/snapshot_assembly.S" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/14ba557bfecc18bbf60239e2ea41cec5/arm64/snapshot_assembly.S" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/14ba557bfecc18bbf60239e2ea41cec5/arm64/snapshot_assembly.o" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/14ba557bfecc18bbf60239e2ea41cec5/arm64/snapshot_assembly.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/14ba557bfecc18bbf60239e2ea41cec5/armv7/App.framework/App" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/14ba557bfecc18bbf60239e2ea41cec5/armv7/App.framework/App" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/14ba557bfecc18bbf60239e2ea41cec5/armv7/snapshot_assembly.S" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/14ba557bfecc18bbf60239e2ea41cec5/armv7/snapshot_assembly.S" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/14ba557bfecc18bbf60239e2ea41cec5/armv7/snapshot_assembly.o" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/14ba557bfecc18bbf60239e2ea41cec5/armv7/snapshot_assembly.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/14ba557bfecc18bbf60239e2ea41cec5/kernel_snapshot.d" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/14ba557bfecc18bbf60239e2ea41cec5/kernel_snapshot.d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/14ba557bfecc18bbf60239e2ea41cec5/kernel_snapshot.stamp" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/14ba557bfecc18bbf60239e2ea41cec5/kernel_snapshot.stamp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/b4cf4b17ffc498c3231d9374d3d065c6/.filecache" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/b4cf4b17ffc498c3231d9374d3d065c6/.filecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/b4cf4b17ffc498c3231d9374d3d065c6/app.dill" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/b4cf4b17ffc498c3231d9374d3d065c6/app.dill" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/b4cf4b17ffc498c3231d9374d3d065c6/kernel_snapshot.d" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/b4cf4b17ffc498c3231d9374d3d065c6/kernel_snapshot.d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/b4cf4b17ffc498c3231d9374d3d065c6/kernel_snapshot.stamp" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/b4cf4b17ffc498c3231d9374d3d065c6/kernel_snapshot.stamp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/badf76d95e3d6549e6266a3927884a66/.filecache" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/badf76d95e3d6549e6266a3927884a66/.filecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/badf76d95e3d6549e6266a3927884a66/app.dill" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/badf76d95e3d6549e6266a3927884a66/app.dill" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/badf76d95e3d6549e6266a3927884a66/kernel_snapshot.d" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/badf76d95e3d6549e6266a3927884a66/kernel_snapshot.d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/badf76d95e3d6549e6266a3927884a66/kernel_snapshot.stamp" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/badf76d95e3d6549e6266a3927884a66/kernel_snapshot.stamp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/d10993220a8379fbdbc5962a6232d215/.filecache" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/d10993220a8379fbdbc5962a6232d215/.filecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/d10993220a8379fbdbc5962a6232d215/App.framework/App" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/d10993220a8379fbdbc5962a6232d215/App.framework/App" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/d10993220a8379fbdbc5962a6232d215/app.dill" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/d10993220a8379fbdbc5962a6232d215/app.dill" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/d10993220a8379fbdbc5962a6232d215/arm64/App.framework/App" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/d10993220a8379fbdbc5962a6232d215/arm64/App.framework/App" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/d10993220a8379fbdbc5962a6232d215/arm64/snapshot_assembly.S" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/d10993220a8379fbdbc5962a6232d215/arm64/snapshot_assembly.S" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/d10993220a8379fbdbc5962a6232d215/arm64/snapshot_assembly.o" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/d10993220a8379fbdbc5962a6232d215/arm64/snapshot_assembly.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/d10993220a8379fbdbc5962a6232d215/flutter_assets.d" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/d10993220a8379fbdbc5962a6232d215/flutter_assets.d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/d10993220a8379fbdbc5962a6232d215/kernel_snapshot.d" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/d10993220a8379fbdbc5962a6232d215/kernel_snapshot.d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/d10993220a8379fbdbc5962a6232d215/kernel_snapshot.stamp" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/d10993220a8379fbdbc5962a6232d215/kernel_snapshot.stamp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/d10993220a8379fbdbc5962a6232d215/release_ios_bundle_flutter_assets.stamp" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/d10993220a8379fbdbc5962a6232d215/release_ios_bundle_flutter_assets.stamp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.dart_tool/package_config.json" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/package_config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/pub/bin/flutter_launcher_icons/main.dart-2.10.1.snapshot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.flutter-plugins" beforeDir="false" afterPath="$PROJECT_DIR$/.flutter-plugins" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.flutter-plugins-dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/.flutter-plugins-dependencies" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.packages" beforeDir="false" afterPath="$PROJECT_DIR$/.packages" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/4366964491f3b7dedb23906de519ef4d.cache.dill.track.dill" beforeDir="false" afterPath="$PROJECT_DIR$/build/4366964491f3b7dedb23906de519ef4d.cache.dill.track.dill" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Debug-Development-iphoneos/Runner.app/Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib/objects-13.0+.nib" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-Development-iphoneos/Runner.app/Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib/objects-13.0+.nib" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Debug-Development-iphoneos/Runner.app/Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib/runtime.nib" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-Development-iphoneos/Runner.app/Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib/runtime.nib" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Debug-Development-iphoneos/Runner.app/Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib/objects-13.0+.nib" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-Development-iphoneos/Runner.app/Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib/objects-13.0+.nib" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Debug-Development-iphoneos/Runner.app/Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib/runtime.nib" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-Development-iphoneos/Runner.app/Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib/runtime.nib" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Debug-Development-iphoneos/Runner.app/Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib/objects-13.0+.nib" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-Development-iphoneos/Runner.app/Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib/objects-13.0+.nib" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Debug-Development-iphoneos/Runner.app/Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib/runtime.nib" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-Development-iphoneos/Runner.app/Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib/runtime.nib" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Debug-Development-iphoneos/Runner.app/Base.lproj/Main.storyboardc/UIViewController-BYZ-38-t0r.nib/objects-13.0+.nib" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-Development-iphoneos/Runner.app/Base.lproj/Main.storyboardc/UIViewController-BYZ-38-t0r.nib/objects-13.0+.nib" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Debug-Development-iphoneos/Runner.app/Base.lproj/Main.storyboardc/UIViewController-BYZ-38-t0r.nib/runtime.nib" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-Development-iphoneos/Runner.app/Base.lproj/Main.storyboardc/UIViewController-BYZ-38-t0r.nib/runtime.nib" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Debug-Development-iphoneos/Runner.app/Frameworks/App.framework/App" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-Development-iphoneos/Runner.app/Frameworks/App.framework/App" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Debug-Development-iphoneos/Runner.app/Frameworks/App.framework/_CodeSignature/CodeResources" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-Development-iphoneos/Runner.app/Frameworks/App.framework/_CodeSignature/CodeResources" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Debug-Development-iphoneos/Runner.app/Frameworks/App.framework/flutter_assets/kernel_blob.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-Development-iphoneos/Runner.app/Frameworks/App.framework/flutter_assets/kernel_blob.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Debug-Development-iphoneos/Runner.app/Frameworks/FBLPromises.framework/FBLPromises" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-Development-iphoneos/Runner.app/Frameworks/FBLPromises.framework/FBLPromises" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Debug-Development-iphoneos/Runner.app/Frameworks/FMDB.framework/FMDB" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-Development-iphoneos/Runner.app/Frameworks/FMDB.framework/FMDB" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Debug-Development-iphoneos/Runner.app/Frameworks/Flutter.framework/Flutter" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-Development-iphoneos/Runner.app/Frameworks/Flutter.framework/Flutter" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Debug-Development-iphoneos/Runner.app/Frameworks/GTMSessionFetcher.framework/GTMSessionFetcher" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-Development-iphoneos/Runner.app/Frameworks/GTMSessionFetcher.framework/GTMSessionFetcher" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Debug-Development-iphoneos/Runner.app/Frameworks/GoogleUtilities.framework/GoogleUtilities" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-Development-iphoneos/Runner.app/Frameworks/GoogleUtilities.framework/GoogleUtilities" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Debug-Development-iphoneos/Runner.app/Frameworks/TOCropViewController.framework/TOCropViewController" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-Development-iphoneos/Runner.app/Frameworks/TOCropViewController.framework/TOCropViewController" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Debug-Development-iphoneos/Runner.app/Frameworks/absl.framework/absl" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-Development-iphoneos/Runner.app/Frameworks/absl.framework/absl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Debug-Development-iphoneos/Runner.app/Frameworks/flutter_native_image.framework/flutter_native_image" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-Development-iphoneos/Runner.app/Frameworks/flutter_native_image.framework/flutter_native_image" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Debug-Development-iphoneos/Runner.app/Frameworks/grpc.framework/grpc" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-Development-iphoneos/Runner.app/Frameworks/grpc.framework/grpc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Debug-Development-iphoneos/Runner.app/Frameworks/grpcpp.framework/grpcpp" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-Development-iphoneos/Runner.app/Frameworks/grpcpp.framework/grpcpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Debug-Development-iphoneos/Runner.app/Frameworks/image_cropper.framework/image_cropper" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-Development-iphoneos/Runner.app/Frameworks/image_cropper.framework/image_cropper" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Debug-Development-iphoneos/Runner.app/Frameworks/image_picker.framework/image_picker" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-Development-iphoneos/Runner.app/Frameworks/image_picker.framework/image_picker" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Debug-Development-iphoneos/Runner.app/Frameworks/leveldb.framework/leveldb" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-Development-iphoneos/Runner.app/Frameworks/leveldb.framework/leveldb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Debug-Development-iphoneos/Runner.app/Frameworks/nanopb.framework/nanopb" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-Development-iphoneos/Runner.app/Frameworks/nanopb.framework/nanopb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Debug-Development-iphoneos/Runner.app/Frameworks/openssl_grpc.framework/openssl_grpc" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-Development-iphoneos/Runner.app/Frameworks/openssl_grpc.framework/openssl_grpc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Debug-Development-iphoneos/Runner.app/Frameworks/path_provider.framework/path_provider" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-Development-iphoneos/Runner.app/Frameworks/path_provider.framework/path_provider" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Debug-Development-iphoneos/Runner.app/Frameworks/sqflite.framework/sqflite" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-Development-iphoneos/Runner.app/Frameworks/sqflite.framework/sqflite" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Debug-Development-iphoneos/Runner.app/Runner" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-Development-iphoneos/Runner.app/Runner" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Debug-Development-iphoneos/Runner.app/_CodeSignature/CodeResources" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-Development-iphoneos/Runner.app/_CodeSignature/CodeResources" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Debug-Development-iphoneos/cloud_firestore/cloud_firestore.framework/cloud_firestore" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-Development-iphoneos/cloud_firestore/cloud_firestore.framework/cloud_firestore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Debug-Development-iphoneos/firebase_auth/firebase_auth.framework/firebase_auth" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-Development-iphoneos/firebase_auth/firebase_auth.framework/firebase_auth" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Debug-Development-iphoneos/firebase_core/firebase_core.framework/firebase_core" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-Development-iphoneos/firebase_core/firebase_core.framework/firebase_core" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Debug-Development-iphoneos/firebase_storage/firebase_storage.framework/firebase_storage" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-Development-iphoneos/firebase_storage/firebase_storage.framework/firebase_storage" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Debug-Development-iphoneos/flutter_native_image/flutter_native_image.framework.dSYM/Contents/Resources/DWARF/flutter_native_image" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-Development-iphoneos/flutter_native_image/flutter_native_image.framework.dSYM/Contents/Resources/DWARF/flutter_native_image" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Debug-Development-iphoneos/flutter_native_image/flutter_native_image.framework/flutter_native_image" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-Development-iphoneos/flutter_native_image/flutter_native_image.framework/flutter_native_image" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Debug-Development-iphoneos/image_cropper/image_cropper.framework.dSYM/Contents/Resources/DWARF/image_cropper" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-Development-iphoneos/image_cropper/image_cropper.framework.dSYM/Contents/Resources/DWARF/image_cropper" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Debug-Development-iphoneos/image_cropper/image_cropper.framework/image_cropper" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-Development-iphoneos/image_cropper/image_cropper.framework/image_cropper" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Debug-Development-iphoneos/image_picker/image_picker.framework.dSYM/Contents/Resources/DWARF/image_picker" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-Development-iphoneos/image_picker/image_picker.framework.dSYM/Contents/Resources/DWARF/image_picker" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Debug-Development-iphoneos/image_picker/image_picker.framework/image_picker" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-Development-iphoneos/image_picker/image_picker.framework/image_picker" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Debug-Development-iphoneos/path_provider/path_provider.framework.dSYM/Contents/Resources/DWARF/path_provider" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-Development-iphoneos/path_provider/path_provider.framework.dSYM/Contents/Resources/DWARF/path_provider" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Debug-Development-iphoneos/path_provider/path_provider.framework/path_provider" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-Development-iphoneos/path_provider/path_provider.framework/path_provider" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Debug-Development-iphoneos/sqflite/sqflite.framework.dSYM/Contents/Resources/DWARF/sqflite" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-Development-iphoneos/sqflite/sqflite.framework.dSYM/Contents/Resources/DWARF/sqflite" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Debug-Development-iphoneos/sqflite/sqflite.framework/sqflite" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-Development-iphoneos/sqflite/sqflite.framework/sqflite" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Debug-Development-iphonesimulator/Runner.app/Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib/objects-13.0+.nib" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-Development-iphonesimulator/Runner.app/Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib/objects-13.0+.nib" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Debug-Development-iphonesimulator/Runner.app/Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib/runtime.nib" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-Development-iphonesimulator/Runner.app/Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib/runtime.nib" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Debug-Development-iphonesimulator/Runner.app/Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib/objects-13.0+.nib" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-Development-iphonesimulator/Runner.app/Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib/objects-13.0+.nib" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Debug-Development-iphonesimulator/Runner.app/Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib/runtime.nib" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-Development-iphonesimulator/Runner.app/Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib/runtime.nib" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Debug-Development-iphonesimulator/Runner.app/Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib/objects-13.0+.nib" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-Development-iphonesimulator/Runner.app/Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib/objects-13.0+.nib" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Debug-Development-iphonesimulator/Runner.app/Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib/runtime.nib" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-Development-iphonesimulator/Runner.app/Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib/runtime.nib" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Debug-Development-iphonesimulator/Runner.app/Base.lproj/Main.storyboardc/UIViewController-BYZ-38-t0r.nib/objects-13.0+.nib" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-Development-iphonesimulator/Runner.app/Base.lproj/Main.storyboardc/UIViewController-BYZ-38-t0r.nib/objects-13.0+.nib" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Debug-Development-iphonesimulator/Runner.app/Base.lproj/Main.storyboardc/UIViewController-BYZ-38-t0r.nib/runtime.nib" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-Development-iphonesimulator/Runner.app/Base.lproj/Main.storyboardc/UIViewController-BYZ-38-t0r.nib/runtime.nib" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Debug-Development-iphonesimulator/Runner.app/Frameworks/App.framework/App" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-Development-iphonesimulator/Runner.app/Frameworks/App.framework/App" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Debug-Development-iphonesimulator/Runner.app/Frameworks/App.framework/_CodeSignature/CodeResources" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-Development-iphonesimulator/Runner.app/Frameworks/App.framework/_CodeSignature/CodeResources" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Debug-Development-iphonesimulator/Runner.app/Frameworks/App.framework/flutter_assets/kernel_blob.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-Development-iphonesimulator/Runner.app/Frameworks/App.framework/flutter_assets/kernel_blob.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Debug-Development-iphonesimulator/Runner.app/Frameworks/flutter_native_image.framework/flutter_native_image" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-Development-iphonesimulator/Runner.app/Frameworks/flutter_native_image.framework/flutter_native_image" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Debug-Development-iphonesimulator/Runner.app/Frameworks/image_cropper.framework/image_cropper" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-Development-iphonesimulator/Runner.app/Frameworks/image_cropper.framework/image_cropper" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Debug-Development-iphonesimulator/Runner.app/Frameworks/image_picker.framework/image_picker" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-Development-iphonesimulator/Runner.app/Frameworks/image_picker.framework/image_picker" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Debug-Development-iphonesimulator/Runner.app/Frameworks/path_provider.framework/path_provider" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-Development-iphonesimulator/Runner.app/Frameworks/path_provider.framework/path_provider" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Debug-Development-iphonesimulator/Runner.app/Frameworks/sqflite.framework/sqflite" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-Development-iphonesimulator/Runner.app/Frameworks/sqflite.framework/sqflite" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Debug-Development-iphonesimulator/Runner.app/Info.plist" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-Development-iphonesimulator/Runner.app/Info.plist" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Debug-Development-iphonesimulator/Runner.app/Runner" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-Development-iphonesimulator/Runner.app/Runner" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Debug-Development-iphonesimulator/Runner.app/_CodeSignature/CodeResources" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-Development-iphonesimulator/Runner.app/_CodeSignature/CodeResources" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Debug-Development-iphonesimulator/cloud_firestore/cloud_firestore.framework/_CodeSignature/CodeDirectory" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-Development-iphonesimulator/cloud_firestore/cloud_firestore.framework/_CodeSignature/CodeDirectory" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Debug-Development-iphonesimulator/cloud_firestore/cloud_firestore.framework/_CodeSignature/CodeRequirements-1" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-Development-iphonesimulator/cloud_firestore/cloud_firestore.framework/_CodeSignature/CodeRequirements-1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Debug-Development-iphonesimulator/cloud_firestore/cloud_firestore.framework/cloud_firestore" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-Development-iphonesimulator/cloud_firestore/cloud_firestore.framework/cloud_firestore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Debug-Development-iphonesimulator/firebase_auth/firebase_auth.framework/_CodeSignature/CodeDirectory" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-Development-iphonesimulator/firebase_auth/firebase_auth.framework/_CodeSignature/CodeDirectory" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Debug-Development-iphonesimulator/firebase_auth/firebase_auth.framework/_CodeSignature/CodeRequirements-1" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-Development-iphonesimulator/firebase_auth/firebase_auth.framework/_CodeSignature/CodeRequirements-1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Debug-Development-iphonesimulator/firebase_auth/firebase_auth.framework/firebase_auth" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-Development-iphonesimulator/firebase_auth/firebase_auth.framework/firebase_auth" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Debug-Development-iphonesimulator/firebase_core/firebase_core.framework/_CodeSignature/CodeDirectory" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-Development-iphonesimulator/firebase_core/firebase_core.framework/_CodeSignature/CodeDirectory" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Debug-Development-iphonesimulator/firebase_core/firebase_core.framework/_CodeSignature/CodeRequirements-1" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-Development-iphonesimulator/firebase_core/firebase_core.framework/_CodeSignature/CodeRequirements-1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Debug-Development-iphonesimulator/firebase_core/firebase_core.framework/firebase_core" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-Development-iphonesimulator/firebase_core/firebase_core.framework/firebase_core" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Debug-Development-iphonesimulator/firebase_storage/firebase_storage.framework/_CodeSignature/CodeDirectory" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-Development-iphonesimulator/firebase_storage/firebase_storage.framework/_CodeSignature/CodeDirectory" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Debug-Development-iphonesimulator/firebase_storage/firebase_storage.framework/_CodeSignature/CodeRequirements-1" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-Development-iphonesimulator/firebase_storage/firebase_storage.framework/_CodeSignature/CodeRequirements-1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Debug-Development-iphonesimulator/firebase_storage/firebase_storage.framework/firebase_storage" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-Development-iphonesimulator/firebase_storage/firebase_storage.framework/firebase_storage" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Debug-Development-iphonesimulator/flutter_native_image/flutter_native_image.framework.dSYM/Contents/Resources/DWARF/flutter_native_image" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-Development-iphonesimulator/flutter_native_image/flutter_native_image.framework.dSYM/Contents/Resources/DWARF/flutter_native_image" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Debug-Development-iphonesimulator/flutter_native_image/flutter_native_image.framework/flutter_native_image" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-Development-iphonesimulator/flutter_native_image/flutter_native_image.framework/flutter_native_image" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Debug-Development-iphonesimulator/image_cropper/image_cropper.framework.dSYM/Contents/Resources/DWARF/image_cropper" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-Development-iphonesimulator/image_cropper/image_cropper.framework.dSYM/Contents/Resources/DWARF/image_cropper" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Debug-Development-iphonesimulator/image_cropper/image_cropper.framework/image_cropper" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-Development-iphonesimulator/image_cropper/image_cropper.framework/image_cropper" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Debug-Development-iphonesimulator/image_picker/image_picker.framework.dSYM/Contents/Resources/DWARF/image_picker" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-Development-iphonesimulator/image_picker/image_picker.framework.dSYM/Contents/Resources/DWARF/image_picker" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Debug-Development-iphonesimulator/image_picker/image_picker.framework/image_picker" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-Development-iphonesimulator/image_picker/image_picker.framework/image_picker" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Debug-Development-iphonesimulator/path_provider/path_provider.framework.dSYM/Contents/Resources/DWARF/path_provider" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-Development-iphonesimulator/path_provider/path_provider.framework.dSYM/Contents/Resources/DWARF/path_provider" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Debug-Development-iphonesimulator/path_provider/path_provider.framework/path_provider" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-Development-iphonesimulator/path_provider/path_provider.framework/path_provider" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Debug-Development-iphonesimulator/sqflite/sqflite.framework.dSYM/Contents/Resources/DWARF/sqflite" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-Development-iphonesimulator/sqflite/sqflite.framework.dSYM/Contents/Resources/DWARF/sqflite" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Debug-Development-iphonesimulator/sqflite/sqflite.framework/sqflite" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-Development-iphonesimulator/sqflite/sqflite.framework/sqflite" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Release-Production-iphoneos/BoringSSL-GRPC/openssl_grpc.framework/openssl_grpc" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Release-Production-iphoneos/BoringSSL-GRPC/openssl_grpc.framework/openssl_grpc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Release-Production-iphoneos/FMDB/FMDB.framework/FMDB" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Release-Production-iphoneos/FMDB/FMDB.framework/FMDB" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Release-Production-iphoneos/GTMSessionFetcher/GTMSessionFetcher.framework/GTMSessionFetcher" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Release-Production-iphoneos/GTMSessionFetcher/GTMSessionFetcher.framework/GTMSessionFetcher" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Release-Production-iphoneos/GoogleUtilities/GoogleUtilities.framework/GoogleUtilities" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Release-Production-iphoneos/GoogleUtilities/GoogleUtilities.framework/GoogleUtilities" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Release-Production-iphoneos/PromisesObjC/FBLPromises.framework/FBLPromises" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Release-Production-iphoneos/PromisesObjC/FBLPromises.framework/FBLPromises" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Release-Production-iphoneos/Runner.app.dSYM/Contents/Resources/DWARF/Runner" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Release-Production-iphoneos/Runner.app.dSYM/Contents/Resources/DWARF/Runner" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Release-Production-iphoneos/Runner.app/AppIcon20x20@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Release-Production-iphoneos/Runner.app/AppIcon20x20@2x.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Release-Production-iphoneos/Runner.app/AppIcon20x20@2x~ipad.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Release-Production-iphoneos/Runner.app/AppIcon20x20@2x~ipad.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Release-Production-iphoneos/Runner.app/AppIcon20x20@3x.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Release-Production-iphoneos/Runner.app/AppIcon20x20@3x.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Release-Production-iphoneos/Runner.app/AppIcon20x20~ipad.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Release-Production-iphoneos/Runner.app/AppIcon20x20~ipad.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Release-Production-iphoneos/Runner.app/AppIcon29x29.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Release-Production-iphoneos/Runner.app/AppIcon29x29.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Release-Production-iphoneos/Runner.app/AppIcon29x29@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Release-Production-iphoneos/Runner.app/AppIcon29x29@2x.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Release-Production-iphoneos/Runner.app/AppIcon29x29@2x~ipad.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Release-Production-iphoneos/Runner.app/AppIcon29x29@2x~ipad.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Release-Production-iphoneos/Runner.app/AppIcon29x29@3x.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Release-Production-iphoneos/Runner.app/AppIcon29x29@3x.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Release-Production-iphoneos/Runner.app/AppIcon29x29~ipad.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Release-Production-iphoneos/Runner.app/AppIcon29x29~ipad.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Release-Production-iphoneos/Runner.app/AppIcon40x40@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Release-Production-iphoneos/Runner.app/AppIcon40x40@2x.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Release-Production-iphoneos/Runner.app/AppIcon40x40@2x~ipad.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Release-Production-iphoneos/Runner.app/AppIcon40x40@2x~ipad.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Release-Production-iphoneos/Runner.app/AppIcon40x40@3x.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Release-Production-iphoneos/Runner.app/AppIcon40x40@3x.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Release-Production-iphoneos/Runner.app/AppIcon40x40~ipad.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Release-Production-iphoneos/Runner.app/AppIcon40x40~ipad.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Release-Production-iphoneos/Runner.app/AppIcon60x60@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Release-Production-iphoneos/Runner.app/AppIcon60x60@2x.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Release-Production-iphoneos/Runner.app/AppIcon60x60@3x.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Release-Production-iphoneos/Runner.app/AppIcon60x60@3x.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Release-Production-iphoneos/Runner.app/AppIcon76x76@2x~ipad.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Release-Production-iphoneos/Runner.app/AppIcon76x76@2x~ipad.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Release-Production-iphoneos/Runner.app/AppIcon76x76~ipad.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Release-Production-iphoneos/Runner.app/AppIcon76x76~ipad.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Release-Production-iphoneos/Runner.app/AppIcon83.5x83.5@2x~ipad.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Release-Production-iphoneos/Runner.app/AppIcon83.5x83.5@2x~ipad.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Release-Production-iphoneos/Runner.app/Assets.car" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Release-Production-iphoneos/Runner.app/Assets.car" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Release-Production-iphoneos/Runner.app/Frameworks/App.framework/App" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Release-Production-iphoneos/Runner.app/Frameworks/App.framework/App" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Release-Production-iphoneos/Runner.app/Frameworks/App.framework/_CodeSignature/CodeResources" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Release-Production-iphoneos/Runner.app/Frameworks/App.framework/_CodeSignature/CodeResources" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Release-Production-iphoneos/Runner.app/Frameworks/App.framework/flutter_assets/NOTICES" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Release-Production-iphoneos/Runner.app/Frameworks/App.framework/flutter_assets/NOTICES" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Release-Production-iphoneos/Runner.app/Frameworks/FBLPromises.framework/FBLPromises" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Release-Production-iphoneos/Runner.app/Frameworks/FBLPromises.framework/FBLPromises" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Release-Production-iphoneos/Runner.app/Frameworks/FMDB.framework/FMDB" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Release-Production-iphoneos/Runner.app/Frameworks/FMDB.framework/FMDB" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Release-Production-iphoneos/Runner.app/Frameworks/Flutter.framework/Flutter" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Release-Production-iphoneos/Runner.app/Frameworks/Flutter.framework/Flutter" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Release-Production-iphoneos/Runner.app/Frameworks/GTMSessionFetcher.framework/GTMSessionFetcher" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Release-Production-iphoneos/Runner.app/Frameworks/GTMSessionFetcher.framework/GTMSessionFetcher" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Release-Production-iphoneos/Runner.app/Frameworks/GoogleUtilities.framework/GoogleUtilities" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Release-Production-iphoneos/Runner.app/Frameworks/GoogleUtilities.framework/GoogleUtilities" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Release-Production-iphoneos/Runner.app/Frameworks/TOCropViewController.framework/TOCropViewController" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Release-Production-iphoneos/Runner.app/Frameworks/TOCropViewController.framework/TOCropViewController" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Release-Production-iphoneos/Runner.app/Frameworks/absl.framework/absl" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Release-Production-iphoneos/Runner.app/Frameworks/absl.framework/absl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Release-Production-iphoneos/Runner.app/Frameworks/flutter_native_image.framework/flutter_native_image" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Release-Production-iphoneos/Runner.app/Frameworks/flutter_native_image.framework/flutter_native_image" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Release-Production-iphoneos/Runner.app/Frameworks/grpc.framework/grpc" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Release-Production-iphoneos/Runner.app/Frameworks/grpc.framework/grpc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Release-Production-iphoneos/Runner.app/Frameworks/grpcpp.framework/grpcpp" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Release-Production-iphoneos/Runner.app/Frameworks/grpcpp.framework/grpcpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Release-Production-iphoneos/Runner.app/Frameworks/image_cropper.framework/image_cropper" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Release-Production-iphoneos/Runner.app/Frameworks/image_cropper.framework/image_cropper" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Release-Production-iphoneos/Runner.app/Frameworks/image_picker.framework/image_picker" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Release-Production-iphoneos/Runner.app/Frameworks/image_picker.framework/image_picker" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Release-Production-iphoneos/Runner.app/Frameworks/leveldb.framework/leveldb" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Release-Production-iphoneos/Runner.app/Frameworks/leveldb.framework/leveldb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Release-Production-iphoneos/Runner.app/Frameworks/nanopb.framework/nanopb" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Release-Production-iphoneos/Runner.app/Frameworks/nanopb.framework/nanopb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Release-Production-iphoneos/Runner.app/Frameworks/openssl_grpc.framework/openssl_grpc" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Release-Production-iphoneos/Runner.app/Frameworks/openssl_grpc.framework/openssl_grpc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Release-Production-iphoneos/Runner.app/Frameworks/path_provider.framework/path_provider" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Release-Production-iphoneos/Runner.app/Frameworks/path_provider.framework/path_provider" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Release-Production-iphoneos/Runner.app/Frameworks/sqflite.framework/sqflite" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Release-Production-iphoneos/Runner.app/Frameworks/sqflite.framework/sqflite" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Release-Production-iphoneos/Runner.app/Info.plist" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Release-Production-iphoneos/Runner.app/Info.plist" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Release-Production-iphoneos/Runner.app/Runner" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Release-Production-iphoneos/Runner.app/Runner" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Release-Production-iphoneos/Runner.app/_CodeSignature/CodeResources" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Release-Production-iphoneos/Runner.app/_CodeSignature/CodeResources" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Release-Production-iphoneos/TOCropViewController/TOCropViewController.framework/TOCropViewController" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Release-Production-iphoneos/TOCropViewController/TOCropViewController.framework/TOCropViewController" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Release-Production-iphoneos/abseil/absl.framework/absl" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Release-Production-iphoneos/abseil/absl.framework/absl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Release-Production-iphoneos/cloud_firestore/cloud_firestore.framework/cloud_firestore" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Release-Production-iphoneos/cloud_firestore/cloud_firestore.framework/cloud_firestore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Release-Production-iphoneos/firebase_auth/firebase_auth.framework/firebase_auth" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Release-Production-iphoneos/firebase_auth/firebase_auth.framework/firebase_auth" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Release-Production-iphoneos/firebase_core/firebase_core.framework/firebase_core" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Release-Production-iphoneos/firebase_core/firebase_core.framework/firebase_core" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Release-Production-iphoneos/firebase_storage/firebase_storage.framework/firebase_storage" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Release-Production-iphoneos/firebase_storage/firebase_storage.framework/firebase_storage" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Release-Production-iphoneos/flutter_native_image/flutter_native_image.framework.dSYM/Contents/Resources/DWARF/flutter_native_image" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Release-Production-iphoneos/flutter_native_image/flutter_native_image.framework.dSYM/Contents/Resources/DWARF/flutter_native_image" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Release-Production-iphoneos/flutter_native_image/flutter_native_image.framework/flutter_native_image" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Release-Production-iphoneos/flutter_native_image/flutter_native_image.framework/flutter_native_image" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Release-Production-iphoneos/gRPC-C++/grpcpp.framework/grpcpp" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Release-Production-iphoneos/gRPC-C++/grpcpp.framework/grpcpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Release-Production-iphoneos/gRPC-Core/grpc.framework/grpc" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Release-Production-iphoneos/gRPC-Core/grpc.framework/grpc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Release-Production-iphoneos/image_cropper/image_cropper.framework.dSYM/Contents/Resources/DWARF/image_cropper" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Release-Production-iphoneos/image_cropper/image_cropper.framework.dSYM/Contents/Resources/DWARF/image_cropper" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Release-Production-iphoneos/image_cropper/image_cropper.framework/image_cropper" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Release-Production-iphoneos/image_cropper/image_cropper.framework/image_cropper" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Release-Production-iphoneos/image_picker/image_picker.framework.dSYM/Contents/Resources/DWARF/image_picker" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Release-Production-iphoneos/image_picker/image_picker.framework.dSYM/Contents/Resources/DWARF/image_picker" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Release-Production-iphoneos/image_picker/image_picker.framework/image_picker" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Release-Production-iphoneos/image_picker/image_picker.framework/image_picker" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Release-Production-iphoneos/leveldb-library/leveldb.framework/leveldb" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Release-Production-iphoneos/leveldb-library/leveldb.framework/leveldb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Release-Production-iphoneos/nanopb/nanopb.framework/nanopb" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Release-Production-iphoneos/nanopb/nanopb.framework/nanopb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Release-Production-iphoneos/path_provider/path_provider.framework.dSYM/Contents/Resources/DWARF/path_provider" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Release-Production-iphoneos/path_provider/path_provider.framework.dSYM/Contents/Resources/DWARF/path_provider" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Release-Production-iphoneos/path_provider/path_provider.framework/path_provider" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Release-Production-iphoneos/path_provider/path_provider.framework/path_provider" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Release-Production-iphoneos/sqflite/sqflite.framework.dSYM/Contents/Resources/DWARF/sqflite" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Release-Production-iphoneos/sqflite/sqflite.framework.dSYM/Contents/Resources/DWARF/sqflite" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Release-Production-iphoneos/sqflite/sqflite.framework/sqflite" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Release-Production-iphoneos/sqflite/sqflite.framework/sqflite" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/iphoneos/Runner.app/AppIcon20x20@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/iphoneos/Runner.app/AppIcon20x20@2x.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/iphoneos/Runner.app/AppIcon20x20@2x~ipad.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/iphoneos/Runner.app/AppIcon20x20@2x~ipad.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/iphoneos/Runner.app/AppIcon20x20@3x.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/iphoneos/Runner.app/AppIcon20x20@3x.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/iphoneos/Runner.app/AppIcon20x20~ipad.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/iphoneos/Runner.app/AppIcon20x20~ipad.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/iphoneos/Runner.app/AppIcon29x29.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/iphoneos/Runner.app/AppIcon29x29.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/iphoneos/Runner.app/AppIcon29x29@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/iphoneos/Runner.app/AppIcon29x29@2x.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/iphoneos/Runner.app/AppIcon29x29@2x~ipad.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/iphoneos/Runner.app/AppIcon29x29@2x~ipad.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/iphoneos/Runner.app/AppIcon29x29@3x.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/iphoneos/Runner.app/AppIcon29x29@3x.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/iphoneos/Runner.app/AppIcon29x29~ipad.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/iphoneos/Runner.app/AppIcon29x29~ipad.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/iphoneos/Runner.app/AppIcon40x40@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/iphoneos/Runner.app/AppIcon40x40@2x.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/iphoneos/Runner.app/AppIcon40x40@2x~ipad.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/iphoneos/Runner.app/AppIcon40x40@2x~ipad.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/iphoneos/Runner.app/AppIcon40x40@3x.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/iphoneos/Runner.app/AppIcon40x40@3x.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/iphoneos/Runner.app/AppIcon40x40~ipad.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/iphoneos/Runner.app/AppIcon40x40~ipad.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/iphoneos/Runner.app/AppIcon60x60@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/iphoneos/Runner.app/AppIcon60x60@2x.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/iphoneos/Runner.app/AppIcon60x60@3x.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/iphoneos/Runner.app/AppIcon60x60@3x.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/iphoneos/Runner.app/AppIcon76x76@2x~ipad.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/iphoneos/Runner.app/AppIcon76x76@2x~ipad.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/iphoneos/Runner.app/AppIcon76x76~ipad.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/iphoneos/Runner.app/AppIcon76x76~ipad.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/iphoneos/Runner.app/AppIcon83.5x83.5@2x~ipad.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/iphoneos/Runner.app/AppIcon83.5x83.5@2x~ipad.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/iphoneos/Runner.app/Assets.car" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/iphoneos/Runner.app/Assets.car" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/iphoneos/Runner.app/Frameworks/App.framework/App" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/iphoneos/Runner.app/Frameworks/App.framework/App" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/iphoneos/Runner.app/Frameworks/App.framework/_CodeSignature/CodeResources" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/iphoneos/Runner.app/Frameworks/App.framework/_CodeSignature/CodeResources" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/iphoneos/Runner.app/Frameworks/App.framework/flutter_assets/NOTICES" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/iphoneos/Runner.app/Frameworks/App.framework/flutter_assets/NOTICES" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/iphoneos/Runner.app/Frameworks/FBLPromises.framework/FBLPromises" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/iphoneos/Runner.app/Frameworks/FBLPromises.framework/FBLPromises" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/iphoneos/Runner.app/Frameworks/FMDB.framework/FMDB" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/iphoneos/Runner.app/Frameworks/FMDB.framework/FMDB" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/iphoneos/Runner.app/Frameworks/Flutter.framework/Flutter" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/iphoneos/Runner.app/Frameworks/Flutter.framework/Flutter" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/iphoneos/Runner.app/Frameworks/GTMSessionFetcher.framework/GTMSessionFetcher" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/iphoneos/Runner.app/Frameworks/GTMSessionFetcher.framework/GTMSessionFetcher" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/iphoneos/Runner.app/Frameworks/GoogleUtilities.framework/GoogleUtilities" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/iphoneos/Runner.app/Frameworks/GoogleUtilities.framework/GoogleUtilities" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/iphoneos/Runner.app/Frameworks/TOCropViewController.framework/TOCropViewController" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/iphoneos/Runner.app/Frameworks/TOCropViewController.framework/TOCropViewController" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/iphoneos/Runner.app/Frameworks/absl.framework/absl" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/iphoneos/Runner.app/Frameworks/absl.framework/absl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/iphoneos/Runner.app/Frameworks/flutter_native_image.framework/flutter_native_image" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/iphoneos/Runner.app/Frameworks/flutter_native_image.framework/flutter_native_image" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/iphoneos/Runner.app/Frameworks/grpc.framework/grpc" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/iphoneos/Runner.app/Frameworks/grpc.framework/grpc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/iphoneos/Runner.app/Frameworks/grpcpp.framework/grpcpp" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/iphoneos/Runner.app/Frameworks/grpcpp.framework/grpcpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/iphoneos/Runner.app/Frameworks/image_cropper.framework/image_cropper" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/iphoneos/Runner.app/Frameworks/image_cropper.framework/image_cropper" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/iphoneos/Runner.app/Frameworks/image_picker.framework/image_picker" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/iphoneos/Runner.app/Frameworks/image_picker.framework/image_picker" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/iphoneos/Runner.app/Frameworks/leveldb.framework/leveldb" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/iphoneos/Runner.app/Frameworks/leveldb.framework/leveldb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/iphoneos/Runner.app/Frameworks/nanopb.framework/nanopb" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/iphoneos/Runner.app/Frameworks/nanopb.framework/nanopb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/iphoneos/Runner.app/Frameworks/openssl_grpc.framework/openssl_grpc" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/iphoneos/Runner.app/Frameworks/openssl_grpc.framework/openssl_grpc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/iphoneos/Runner.app/Frameworks/path_provider.framework/path_provider" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/iphoneos/Runner.app/Frameworks/path_provider.framework/path_provider" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/iphoneos/Runner.app/Frameworks/sqflite.framework/sqflite" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/iphoneos/Runner.app/Frameworks/sqflite.framework/sqflite" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/iphoneos/Runner.app/Info.plist" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/iphoneos/Runner.app/Info.plist" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/iphoneos/Runner.app/Runner" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/iphoneos/Runner.app/Runner" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/iphoneos/Runner.app/_CodeSignature/CodeResources" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/iphoneos/Runner.app/_CodeSignature/CodeResources" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/iphonesimulator/Runner.app/Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib/objects-13.0+.nib" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/iphonesimulator/Runner.app/Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib/objects-13.0+.nib" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/iphonesimulator/Runner.app/Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib/runtime.nib" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/iphonesimulator/Runner.app/Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib/runtime.nib" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/iphonesimulator/Runner.app/Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib/objects-13.0+.nib" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/iphonesimulator/Runner.app/Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib/objects-13.0+.nib" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/iphonesimulator/Runner.app/Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib/runtime.nib" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/iphonesimulator/Runner.app/Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib/runtime.nib" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/iphonesimulator/Runner.app/Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib/objects-13.0+.nib" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/iphonesimulator/Runner.app/Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib/objects-13.0+.nib" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/iphonesimulator/Runner.app/Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib/runtime.nib" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/iphonesimulator/Runner.app/Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib/runtime.nib" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/iphonesimulator/Runner.app/Base.lproj/Main.storyboardc/UIViewController-BYZ-38-t0r.nib/objects-13.0+.nib" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/iphonesimulator/Runner.app/Base.lproj/Main.storyboardc/UIViewController-BYZ-38-t0r.nib/objects-13.0+.nib" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/iphonesimulator/Runner.app/Base.lproj/Main.storyboardc/UIViewController-BYZ-38-t0r.nib/runtime.nib" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/iphonesimulator/Runner.app/Base.lproj/Main.storyboardc/UIViewController-BYZ-38-t0r.nib/runtime.nib" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/iphonesimulator/Runner.app/Frameworks/App.framework/App" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/iphonesimulator/Runner.app/Frameworks/App.framework/App" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/iphonesimulator/Runner.app/Frameworks/App.framework/_CodeSignature/CodeResources" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/iphonesimulator/Runner.app/Frameworks/App.framework/_CodeSignature/CodeResources" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/iphonesimulator/Runner.app/Frameworks/App.framework/flutter_assets/kernel_blob.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/iphonesimulator/Runner.app/Frameworks/App.framework/flutter_assets/kernel_blob.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/iphonesimulator/Runner.app/Frameworks/flutter_native_image.framework/flutter_native_image" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/iphonesimulator/Runner.app/Frameworks/flutter_native_image.framework/flutter_native_image" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/iphonesimulator/Runner.app/Frameworks/image_cropper.framework/image_cropper" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/iphonesimulator/Runner.app/Frameworks/image_cropper.framework/image_cropper" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/iphonesimulator/Runner.app/Frameworks/image_picker.framework/image_picker" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/iphonesimulator/Runner.app/Frameworks/image_picker.framework/image_picker" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/iphonesimulator/Runner.app/Frameworks/path_provider.framework/path_provider" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/iphonesimulator/Runner.app/Frameworks/path_provider.framework/path_provider" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/iphonesimulator/Runner.app/Frameworks/sqflite.framework/sqflite" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/iphonesimulator/Runner.app/Frameworks/sqflite.framework/sqflite" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/iphonesimulator/Runner.app/Info.plist" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/iphonesimulator/Runner.app/Info.plist" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/iphonesimulator/Runner.app/Runner" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/iphonesimulator/Runner.app/Runner" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/iphonesimulator/Runner.app/_CodeSignature/CodeResources" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/iphonesimulator/Runner.app/_CodeSignature/CodeResources" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/app_model.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/app_model.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/presentation/home/home_model.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/presentation/home/home_model.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/presentation/home/home_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/presentation/home/home_page.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/presentation/login/login_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/presentation/login/login_page.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/presentation/my/my_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/presentation/my/my_page.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/presentation/recipe_add/recipe_add_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/presentation/recipe_add/recipe_add_page.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/presentation/recipe_detail/recipe_detail_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/presentation/recipe_detail/recipe_detail_page.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/presentation/recipe_edit/recipe_edit_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/presentation/recipe_edit/recipe_edit_page.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/presentation/search/search_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/presentation/search/search_page.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/presentation/recipe_add/recipe_add_model.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/presentation/recipe_add/recipe_add_model.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/presentation/splash/splash_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/presentation/splash/splash_page.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/presentation/top/top_model.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/presentation/top/top_model.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/presentation/top/top_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/presentation/top/top_page.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/img_app_icon.jpg" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.dart_tool/" />
     <ignored path="$PROJECT_DIR$/.idea/" />
@@ -284,60 +33,87 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/app_model.dart">
+        <entry file="file://$PROJECT_DIR$/lib/presentation/login/login_page.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="367">
-              <caret line="41" column="54" selection-start-line="41" selection-start-column="54" selection-end-line="41" selection-end-column="54" />
+            <state relative-caret-position="307">
+              <caret line="288" column="2" selection-start-line="288" selection-start-column="2" selection-end-line="288" selection-end-column="2" />
               <folding>
-                <element signature="e#0#20#0" expanded="true" />
+                <element signature="e#0#54#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/icon/icon.png">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@1x.png">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@2x.png">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@3x.png">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@1x.png">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@2x.png">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@3x.png">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@1x.png">
-          <provider selected="true" editor-type-id="images" />
+        <entry file="file://$PROJECT_DIR$/lib/presentation/home/home_page.dart">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="344">
+              <caret line="100" column="49" selection-start-line="100" selection-start-column="49" selection-end-line="100" selection-end-column="49" />
+              <folding>
+                <element signature="e#0#49#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@2x.png">
-          <provider selected="true" editor-type-id="images" />
+        <entry file="file://$PROJECT_DIR$/lib/presentation/home/home_model.dart">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="217">
+              <caret line="154" column="27" selection-start-line="154" selection-start-column="27" selection-end-line="154" selection-end-column="27" />
+              <folding>
+                <element signature="e#0#49#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/presentation/splash/splash_page.dart">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="405">
+              <caret line="27" selection-start-line="27" selection-end-line="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../development/flutter/packages/flutter/lib/src/widgets/basic.dart">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="273">
+              <caret line="4275" column="49" selection-start-line="4275" selection-start-column="49" selection-end-line="4275" selection-end-column="49" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../development/flutter/packages/flutter/lib/src/rendering/flex.dart">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="597">
+              <caret line="126" column="14" selection-start-line="126" selection-start-column="2" selection-end-line="126" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/presentation/recipe_add/recipe_add_model.dart">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="173">
+              <caret line="106" column="20" selection-start-line="106" selection-start-column="20" selection-end-line="106" selection-end-column="20" />
+              <folding>
+                <element signature="e#0#17#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pubspec.yaml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="453">
+              <caret line="37" column="23" selection-start-line="37" selection-start-column="23" selection-end-line="37" selection-end-column="23" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -400,14 +176,11 @@
         <option value="$PROJECT_DIR$/lib/presentation/Home/home_model.dart" />
         <option value="$PROJECT_DIR$/lib/presentation/Home/home_page.dart" />
         <option value="$PROJECT_DIR$/lib/common/recipe_add.dart" />
-        <option value="$PROJECT_DIR$/lib/presentation/recipe_add/recipe_add_model.dart" />
         <option value="$PROJECT_DIR$/lib/common/likes.dart" />
-        <option value="$PROJECT_DIR$/lib/presentation/home/home_page.dart" />
         <option value="$PROJECT_DIR$/lib/presentation/signup/signup_page.dart" />
         <option value="$PROJECT_DIR$/lib/presentation/login/login_model.dart" />
         <option value="$PROJECT_DIR$/lib/app.dart" />
         <option value="$PROJECT_DIR$/lib/common/storagePath.dart" />
-        <option value="$PROJECT_DIR$/lib/presentation/home/home_model.dart" />
         <option value="$PROJECT_DIR$/lib/presentation/account_setting/account_setting_model.dart" />
         <option value="$PROJECT_DIR$/lib/presentation/my_edit/my_edit_model.dart" />
         <option value="$PROJECT_DIR$/lib/presentation/my_edit/my_edit_page.dart" />
@@ -423,20 +196,23 @@
         <option value="$PROJECT_DIR$/lib/presentation/recipe_add/recipe_add_page.dart" />
         <option value="$PROJECT_DIR$/lib/presentation/search/search_page.dart" />
         <option value="$PROJECT_DIR$/lib/presentation/recipe_edit/recipe_edit_page.dart" />
-        <option value="$PROJECT_DIR$/lib/presentation/login/login_page.dart" />
         <option value="$PROJECT_DIR$/lib/presentation/top/top_page.dart" />
         <option value="$PROJECT_DIR$/lib/presentation/top/top_model.dart" />
         <option value="$PROJECT_DIR$/lib/presentation/recipe_detail/recipe_detail_page.dart" />
-        <option value="$PROJECT_DIR$/pubspec.yaml" />
-        <option value="$PROJECT_DIR$/lib/presentation/splash/splash_page.dart" />
         <option value="$PROJECT_DIR$/lib/app_model.dart" />
+        <option value="$PROJECT_DIR$/pubspec.yaml" />
+        <option value="$PROJECT_DIR$/lib/presentation/login/login_page.dart" />
+        <option value="$PROJECT_DIR$/lib/presentation/recipe_add/recipe_add_model.dart" />
+        <option value="$PROJECT_DIR$/lib/presentation/splash/splash_page.dart" />
+        <option value="$PROJECT_DIR$/lib/presentation/home/home_page.dart" />
+        <option value="$PROJECT_DIR$/lib/presentation/home/home_model.dart" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="358" />
-    <option name="y" value="34" />
-    <option name="width" value="1082" />
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="x" value="397" />
+    <option name="y" value="23" />
+    <option name="width" value="1043" />
     <option name="height" value="877" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -456,28 +232,34 @@
             <path>
               <item name="charaben_app" type="b2602c69:ProjectViewProjectNode" />
               <item name="charaben_app" type="462c0819:PsiDirectoryNode" />
-              <item name="ios" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="charaben_app" type="b2602c69:ProjectViewProjectNode" />
               <item name="charaben_app" type="462c0819:PsiDirectoryNode" />
-              <item name="ios" type="462c0819:PsiDirectoryNode" />
-              <item name="Runner" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="presentation" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="charaben_app" type="b2602c69:ProjectViewProjectNode" />
               <item name="charaben_app" type="462c0819:PsiDirectoryNode" />
-              <item name="ios" type="462c0819:PsiDirectoryNode" />
-              <item name="Runner" type="462c0819:PsiDirectoryNode" />
-              <item name="Assets.xcassets" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="presentation" type="462c0819:PsiDirectoryNode" />
+              <item name="home" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="charaben_app" type="b2602c69:ProjectViewProjectNode" />
               <item name="charaben_app" type="462c0819:PsiDirectoryNode" />
-              <item name="ios" type="462c0819:PsiDirectoryNode" />
-              <item name="Runner" type="462c0819:PsiDirectoryNode" />
-              <item name="Assets.xcassets" type="462c0819:PsiDirectoryNode" />
-              <item name="AppIcon.appiconset" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="presentation" type="462c0819:PsiDirectoryNode" />
+              <item name="recipe_add" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="charaben_app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="charaben_app" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="presentation" type="462c0819:PsiDirectoryNode" />
+              <item name="splash" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -556,10 +338,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="358" y="34" width="1082" height="877" extended-state="0" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4990366" visible="true" weight="0.22403847" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4990366" visible="true" weight="0.16666667" />
       <window_info id="Captures" order="1" side_tool="true" />
       <window_info id="Structure" order="2" sideWeight="0.5009634" side_tool="true" weight="0.12804006" />
       <window_info id="Image Layers" order="3" />
@@ -569,12 +351,12 @@
       <window_info id="Capture Tool" order="7" />
       <window_info id="Favorites" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Dart Analysis" order="0" weight="0.33248407" />
-      <window_info anchor="bottom" id="Run" order="1" weight="0.036144577" />
+      <window_info active="true" anchor="bottom" id="Run" order="1" visible="true" weight="0.036144577" />
       <window_info anchor="bottom" id="TODO" order="2" />
       <window_info anchor="bottom" id="Android Profiler" order="3" show_stripe_button="false" />
       <window_info anchor="bottom" id="Logcat" order="4" />
-      <window_info anchor="bottom" id="Debug" order="5" weight="0.33952913" />
-      <window_info anchor="bottom" id="Terminal" order="6" visible="true" weight="0.33375797" />
+      <window_info anchor="bottom" id="Debug" order="5" weight="0.055421688" />
+      <window_info anchor="bottom" id="Terminal" order="6" weight="0.31566265" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Messages" order="9" weight="0.34096387" />
@@ -679,34 +461,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/lib/common/likes.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="1" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../development/flutter/.pub-cache/hosted/pub.dartlang.org/enum_to_string-1.0.13/lib/enum_to_string.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/common/text_dialog.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="339">
-          <caret line="101" column="47" lean-forward="true" selection-start-line="101" selection-start-column="47" selection-end-line="101" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/common/convert_error_message.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="19" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/common/recipe_add.dart">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
@@ -718,16 +472,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/presentation/introduction_edit/introduction_edit_model.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="24" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#47#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -822,26 +566,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/presentation/home/home_page.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="33" column="65" selection-start-line="33" selection-start-column="24" selection-end-line="33" selection-end-column="65" />
-          <folding>
-            <element signature="e#0#49#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/presentation/home/home_model.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="17" column="26" selection-start-line="16" selection-start-column="2" selection-end-line="17" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#49#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/presentation/signup/signup_page.dart">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -866,16 +590,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="515">
           <caret line="75" column="43" selection-start-line="75" selection-start-column="41" selection-end-line="75" selection-end-column="43" />
-          <folding>
-            <element signature="e#0#54#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/presentation/login/login_page.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="394">
-          <caret line="196" column="67" selection-start-line="196" selection-start-column="67" selection-end-line="196" selection-end-column="67" />
           <folding>
             <element signature="e#0#54#0" expanded="true" />
           </folding>
@@ -922,13 +636,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/presentation/login/login_model.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="35" column="11" selection-start-line="35" selection-start-column="11" selection-end-line="35" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/presentation/my/my_page.dart">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="175">
@@ -970,13 +677,6 @@
     <entry file="file://$PROJECT_DIR$/resources/img_app_icon.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/pubspec.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="50" column="19" selection-start-line="50" selection-start-column="19" selection-end-line="50" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/presentation/top/top_model.dart">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
@@ -996,29 +696,6 @@
           </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/presentation/splash/splash_page.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/app_model.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="367">
-          <caret line="41" column="54" selection-start-line="41" selection-start-column="54" selection-end-line="41" selection-end-column="54" />
-          <folding>
-            <element signature="e#0#20#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/icon/icon.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@1x.png">
-      <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@2x.png">
       <provider selected="true" editor-type-id="images" />
@@ -1040,6 +717,116 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@2x.png">
       <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@1x.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/icon/icon.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/app_model.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="367">
+          <caret line="41" column="54" selection-start-line="41" selection-start-column="54" selection-end-line="41" selection-end-column="54" />
+          <folding>
+            <element signature="e#0#20#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/presentation/introduction_edit/introduction_edit_page.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#54#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pubspec.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="453">
+          <caret line="37" column="23" selection-start-line="37" selection-start-column="23" selection-end-line="37" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/presentation/introduction_edit/introduction_edit_model.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="24" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#47#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/presentation/recipe_add/recipe_add_model.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="173">
+          <caret line="106" column="20" selection-start-line="106" selection-start-column="20" selection-end-line="106" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#17#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/presentation/login/login_model.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-490">
+          <caret line="35" column="11" selection-start-line="35" selection-start-column="11" selection-end-line="35" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/presentation/login/login_page.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="307">
+          <caret line="288" column="2" selection-start-line="288" selection-start-column="2" selection-end-line="288" selection-end-column="2" />
+          <folding>
+            <element signature="e#0#54#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../development/flutter/packages/flutter/lib/src/widgets/basic.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="4275" column="49" selection-start-line="4275" selection-start-column="49" selection-end-line="4275" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../development/flutter/packages/flutter/lib/src/rendering/flex.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="597">
+          <caret line="126" column="14" selection-start-line="126" selection-start-column="2" selection-end-line="126" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/presentation/splash/splash_page.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/presentation/home/home_page.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="344">
+          <caret line="100" column="49" selection-start-line="100" selection-start-column="49" selection-end-line="100" selection-end-column="49" />
+          <folding>
+            <element signature="e#0#49#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/presentation/home/home_model.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="154" column="27" selection-start-line="154" selection-start-column="27" selection-end-line="154" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#49#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
   </component>
   <component name="masterDetails">

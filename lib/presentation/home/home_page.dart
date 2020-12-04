@@ -19,7 +19,7 @@ class HomePage extends StatelessWidget {
           model.fetchUser();
         }
         if (updateTime != model.updateTime) {
-          model.checkIfNeedUpdate (updateTime);
+          model.checkIfNeedUpdate(updateTime);
         }
         return model.isLoading
             ? Column(
@@ -35,7 +35,7 @@ class HomePage extends StatelessWidget {
                         padding: EdgeInsets.zero,
                         itemBuilder: (BuildContext context, int index) {
                           if (index == model.charabenList.length - 1 &&
-                          model.canLoadMoreList) {
+                              model.canLoadMoreList) {
                             model.fetchCharabenList();
                           }
                           return Column(
@@ -51,7 +51,8 @@ class HomePage extends StatelessWidget {
                                   SizedBox(
                                     width: 8.0,
                                   ),
-                                  Text(model.charabenList[index].author['name']),
+                                  Text(
+                                      model.charabenList[index].author['name']),
                                 ]),
                               ),
                               InkWell(
@@ -69,29 +70,51 @@ class HomePage extends StatelessWidget {
                                     '${model.imageStoragePath}${model.charabenList[index].documentId}?alt=media',
                                     fit: BoxFit.fitWidth),
                               ),
-                              Container(
-                                height: 40,
-                                alignment: Alignment.topLeft,
-                                child: IconButton(
-                                    icon: model.likes != null &&
-                                            model.likes.contains(model
-                                                .charabenList[index].documentId)
-                                        ? Icon(Icons.favorite,
-                                            size: 30, color: Colors.red)
-                                        : Icon(Icons.favorite_border, size: 30),
-                                    onPressed: () async {
-                                      try {
-                                        await model.changeLike(index);
-                                        if (model.guideToLogin) {
-                                          const message =
-                                              'いいねはログイン後にご利用になることができます。\nMyPageからログインしてください。';
-                                          showTextDialog(context, message);
-                                        }
-                                      } catch (e) {
-                                        showTextDialog(context, e);
-                                      }
-                                    }),
-                              ),
+                              Row(
+                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                  children: [
+                                    SizedBox(
+                                      height: 40,
+                                      child: IconButton(
+                                          icon: model.likes != null &&
+                                                  model.likes.contains(model
+                                                      .charabenList[index]
+                                                      .documentId)
+                                              ? Icon(Icons.favorite,
+                                                  size: 30, color: Colors.red)
+                                              : Icon(Icons.favorite_border,
+                                                  size: 30),
+                                          onPressed: () async {
+                                            try {
+                                              await model.changeLike(index);
+                                              if (model.guideToLogin) {
+                                                const message =
+                                                    'いいねはログイン後にご利用になることができます。\nMyPageからログインしてください。';
+                                                showTextDialog(context, message);
+                                              }
+                                            } catch (e) {
+                                              showTextDialog(context, e);
+                                            }
+                                          }),
+                                    ),
+                                    SizedBox(
+                                      height: 40,
+                                      child: FlatButton(
+                                          onPressed: () async {
+                                            await model.report(index);
+                                            showTextDialog(context,
+                                                'お知らせありがとうございます。\n投稿が不適切な内容か確認いたします。');
+                                          },
+                                          child: Text(
+                                            '通報する',
+                                            style: TextStyle(
+                                              color: Colors.lightBlue,
+                                              fontWeight: FontWeight.bold,
+                                            ),
+                                            textAlign: TextAlign.left,
+                                          )),
+                                    ),
+                                  ]),
                               Container(
                                   padding: EdgeInsets.only(
                                       left: 8.0,
@@ -99,7 +122,8 @@ class HomePage extends StatelessWidget {
                                       right: 8.0,
                                       bottom: 4.0),
                                   alignment: Alignment.topLeft,
-                                  child: Text(model.charabenList[index].caption))
+                                  child:
+                                      Text(model.charabenList[index].caption))
                             ],
                           );
                         },

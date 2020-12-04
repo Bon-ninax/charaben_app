@@ -104,7 +104,7 @@ class RecipeAddModel extends ChangeNotifier {
         throw('');
       }
 
-      name=_doc.data ()['name'];
+      name=_doc.data()['name'];
 
       await FirebaseFirestore.instance
           .collection ('charaben')

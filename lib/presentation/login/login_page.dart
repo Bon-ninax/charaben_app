@@ -6,6 +6,7 @@ import 'package:charaben_app/presentation/signup/signup_page.dart';
 import 'package:charaben_app/common/convert_error_message.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class LoginPage extends StatelessWidget {
   final mailController = TextEditingController();
@@ -181,6 +182,17 @@ class LoginPage extends StatelessWidget {
                         SizedBox(
                           height: 4,
                         ),
+                        FlatButton(
+                          onPressed: () async {
+                            _launchURL();
+                          },
+                          child: Text('利用規約に同意して',
+                          style: TextStyle(
+                            color: Colors.lightBlue,
+                            fontWeight: FontWeight.bold,
+                            ),
+                          textAlign: TextAlign.left,)
+                        ),
                         SizedBox(
                           width: double.infinity,
                           height: 50,
@@ -291,5 +303,13 @@ class LoginPage extends StatelessWidget {
         );
       },
     );
+  }
+  _launchURL() async {
+    const url = "https://charaven-app.web.app/";
+    if (await canLaunch(url)) {
+      await launch(url);
+    } else {
+      throw 'Could not Launch $url';
+    }
   }
 }

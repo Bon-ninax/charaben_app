@@ -133,7 +133,7 @@ class HomeModel extends ChangeNotifier {
           _batch.set (_usersCollection,
                           {
                             'id': targetId,
-                            'createdAt': FieldValue.serverTimestamp (),
+                            'createdAt': FieldValue.serverTimestamp(),
                           }
                       );
           // キャラ弁に登録
@@ -141,7 +141,7 @@ class HomeModel extends ChangeNotifier {
                                 {
                                   'userId': user.uid,
                                   'name': this.userData.name,
-                                  'createdAt': FieldValue.serverTimestamp (),
+                                  'createdAt': FieldValue.serverTimestamp(),
                                 }
                             );
 
@@ -156,6 +156,24 @@ class HomeModel extends ChangeNotifier {
     }
     endLoading();
     notifyListeners();
+  }
+
+  void report(index) {
+    final targetId = this.charabenList[index].documentId;
+    try {
+      FirebaseFirestore.instance
+          .collection('reports')
+          .add (
+            {
+              'targetId' : targetId,
+              'done': false,
+              'createAt' : FieldValue.serverTimestamp()
+            },
+          );
+    } catch(e) {
+      print(e.toString());
+    }
+
   }
 
   void startLoading() {
